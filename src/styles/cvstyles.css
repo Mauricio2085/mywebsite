@@ -1,0 +1,380 @@
+:root {
+    --name: 3rem;
+    --aside-titles: 1.4rem;
+    --aside-contents: 1.2rem;
+    --career-title: 2rem;
+    --section-titles: 1.8rem;
+    --name-job: 1.4rem;
+    --section-contents: 1.2rem;
+    --size-profile-images-print: 200px;
+    --name-job-color: #393838;
+    --place-date-color: #818181;
+    --main-titles-color: #1e8be5;
+}
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    width: auto;
+    height: auto;
+    font-size: 62.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background-color: rgb(231, 231, 231);
+    /* margin-top: 20px; */
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    width: 800px;
+    height: auto;
+    display: flex;
+    background-color: white;
+}
+
+aside {
+    background-color: #335384;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-image {
+    width: auto;
+    height: auto;
+    margin: 40px 15px 40px 15px;
+}
+
+.profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.main-topics {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.topic {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside-title {
+    margin-bottom: 20px;
+    color: white;
+    font-size: var(--aside-titles);
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+
+.item-topic {
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+.icon-topic {
+    padding: 0 10px 10px 10px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.icon-topic img {
+    width: 10px;
+    height: 10px;
+    color: white;
+}
+
+.aside-content {
+    margin-bottom: 10px;
+    color: white;
+    font-size: var(--aside-contents);
+    font-family: Helvetica, sans-serif;
+    line-height: 16px;
+}
+
+.achieves {
+    width: 180px;
+    text-align: justify;
+}
+
+section {
+    padding: 0 30px;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title-section {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.professional-profile {
+    margin-bottom: 20px;
+}
+
+.experience-section {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: var(--name);
+    padding: 30px 0 10px 0;
+    font-family: Helvetica, sans-serif;
+}
+
+span {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 2px;
+    border-top: 1px solid black;
+}
+
+.career {
+    font-family: Helvetica, sans-serif;
+    font-size: var(--career-title);
+    font-weight: bold;
+    color: var(--main-titles-color);
+    margin-bottom: 20px;
+}
+
+.titles {
+    font-family: Helvetica, sans-serif;
+    font-size: var(--section-titles);
+    color: var(--main-titles-color);
+    margin-bottom: 10px;
+}
+
+.content {
+    font-family: Helvetica, sans-serif;
+    font-size: var(--section-contents);
+    color: #000000;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.experience-title {
+    font-family: Helvetica, sans-serif;
+    font-size: var(--name-job);
+    font-weight: bold;
+    color: var(--name-job-color);
+}
+
+.place-date {
+    font-family: Helvetica, sans-serif;
+    font-size: var(--name-job);
+    color: var(--place-date-color);
+    margin-bottom: 10px;
+}
+
+.academic {
+    margin-bottom: 20px;
+}
+
+@media print {
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    html {
+        width: auto;
+        height: auto;
+        font-size: 62.5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    body {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(231, 231, 231);
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-color: white;
+    }
+    
+    aside {
+        background-color: #335384;
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    
+    .profile-image {
+        width: auto;
+        height: auto;
+        margin: 20px 15px 40px 15px;
+    }
+    
+    .profile-image img {
+        width: var(--size-profile-images-print);
+        height: var(--size-profile-images-print);
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .main-topics {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .topic {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .aside-title {
+        margin-bottom: 20px;
+        color: white;
+        font-size: var(--aside-titles);
+        font-weight: bold;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .item-topic {
+        width: 100%;
+        padding: 0 35px 0 20px;
+        display: flex;
+        align-items: center;
+    }
+    .icon-topic {
+        padding: 0 10px 10px 10px;
+        color: white;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    .icon-topic img {
+        width: 10px;
+        height: 10px;
+        color: white;
+    }
+    
+    .aside-content {
+        margin-bottom: 10px;
+        color: white;
+        font-size: var(--aside-contents);
+        font-family: Helvetica, sans-serif;
+        line-height: 16px;
+    }
+
+    .achieves {
+        width: auto;
+        text-align: justify;
+    }
+    
+    section {
+        padding: 0 20px;
+        width: 60%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title-section {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .professional-profile {
+        margin-bottom: 20px;
+    }
+
+    .experience-section {
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        font-size: var(--name);
+        padding: 30px 0 10px 0;
+        font-family: Helvetica, sans-serif;
+    }
+    
+    span {
+        margin-bottom: 20px;
+        width: 200px;
+        height: 2px;
+        border-top: 1px solid black;
+    }
+    
+    .career {
+        font-family: Helvetica, sans-serif;
+        font-size: var(--career-title);
+        font-weight: bold;
+        color: var(--main-titles-color);
+        margin-bottom: 20px;
+    }
+    
+    .titles {
+        font-family: Helvetica, sans-serif;
+        font-size: var(--section-titles);
+        color: var(--main-titles-color);
+        margin-bottom: 10px;
+    }
+    
+    .content {
+        font-family: Helvetica, sans-serif;
+        font-size: var(--section-contents);
+        color: #000000;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+    
+    .experience-title {
+        font-family: Helvetica, sans-serif;
+        font-size: var(--name-job);
+        font-weight: bold;
+        color: var(--name-job-color);
+    }
+    
+    .place-date {
+        font-family: Helvetica, sans-serif;
+        font-size: var(--name-job);
+        color: var(--place-date-color);
+        margin-bottom: 10px;
+    }
+    
+    .academic {
+        margin-bottom: 20px;
+    }
+    
+    
+    }

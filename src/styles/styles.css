@@ -1,4 +1,7 @@
-@import url('./assets/fonts/Ubuntu-BoldItalic.ttf');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 
 :root {
     --primary-color:  rgba(60, 64, 67, 1);;
@@ -6,8 +9,6 @@
     --white-primary: white;
 
 }
-
-
 
 
 * {
@@ -23,17 +24,19 @@ html {
     
 }
 
-header {
-    color: var(--white-primary);
-    background-color:black;
-    height: 150px;
-    font-size: 1.5rem;
-    font-family: 'ubuntu', sans-serif;
-    font-weight: 300;
-     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+.light-mode {
+    background-color: var(--white-primary);
+    color: black;
+}
+
+.aside-right .light-mode {
+    background-color: var(--white-primary);
+    color: black;
+}
+
+footer .light-mode .info-personal {
+    background-color: var(--white-primary);
+    color: black;
 }
 
 .logo {
@@ -41,7 +44,9 @@ header {
 }
 
 
-header ul {
+
+
+nav ul {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -49,14 +54,18 @@ header ul {
     
 }
 
-header ul li{
+nav ul li{
     list-style: none; 
     margin-right: 50px;
+}
 
+nav ul li:hover {
+    color: #383434;
+    text-shadow: 1px 1px #e0dbdb;
 }
 
 body {
-    background-color: black;
+    background: -webkit-linear-gradient(#000000, #5e5a5a, #ffffff);
     display: flex;
     width: 100%;
     height: 100%;
@@ -87,7 +96,7 @@ display: flex;
     box-shadow: 5px 5px 15px 5px #000000;
 }
 
-.perfil-image img {
+.perfil-image .imagePerfil {
     
     width: 200px;
      height: 200px;
@@ -95,34 +104,34 @@ display: flex;
     object-fit: cover;
 }
 
-.principal .perfil-frame {
+.perfil-frame {
     margin: 50px;
     width: 50%;
     height: fit-content;
-    /* background-color: var(--secundary-color); */
-    /* border: 3px solid #555; */
     border-radius: 25px;
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
+    align-items: center;
+    background: -webkit-linear-gradient(#000000, #5e5a5a, #ffffff);
     box-shadow: 1px 1px 3px 5px var(--secundary-color);
 }
 
 .text-frame {
-    width: 50%;
-    margin-top: 5%;
-    padding: 0 20px 0 20px;
-    font-family: 'ubuntu';
-    font-size: 1.5rem;
     color: var(--white-primary);
+    width: 50%;
+    padding: 0 20px 0 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.5rem;
     justify-content: center;
-
+    
 }
 
 .text-frame p {
     justify-content: center;
-    font-family: 'ubuntu', sans-serif;
-
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 24px;
 }
 
 .aside-right {
@@ -134,7 +143,8 @@ display: flex;
     align-items: center;
     justify-content: center;
 }
-.icons-aside {
+ .icons-aside-github {
+    /* background-color: var(--secundary-color); */
     margin-bottom: 20px;
     width: 40px;
     height: 40px;
@@ -143,7 +153,33 @@ display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 25%;
-    background-color: var(--secundary-color);
+    
+    
+}
+
+ .icons-aside-whatsapp {
+    /* background-color: var(--secundary-color); */
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25%;
+    
+ }
+ .icons-aside-linkedin {
+    /* background-color: var(--secundary-color); */
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25%;
+    
     
 }
 
@@ -155,9 +191,10 @@ display: flex;
 }
 
 footer {
+    color: var(--white-primary);
     width: 100%;
-    height: 80px;
-    background-color: var(black);
+    height: 100px;
+    background: -webkit-linear-gradient(#000000, #5e5a5a, #ffffff);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -170,26 +207,29 @@ footer {
 }
 
 .info-personal p {
-   
-    color: var(--white-primary);
-    font-family: 'ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.2rem;
     margin-top: 5px;
     
 }
 
-.icons-footer {
+.main-footer-icons {
     display: none;
-    
 }
 
+.info-personal a {
+    text-decoration: none;
+    font-family: 'ubuntu', sans-serif;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
 
 
 @media (max-width: 800px) {
 
     .logo {
-        width: 45px;
-        height: 45px;
+        width: 32px;
+        height: 32px;
         border-radius: 25%;
         margin: 10px 10px;
         display: flex;
@@ -199,12 +239,21 @@ footer {
 
     }
 
+    header .light-mode {
+        background-color: var(--white-primary);
+    }
+
+    .logo img {
+        width: 24px;
+        height: 24px;
+    }
+
     header {
         width: 100%;
         height: 70px;
+        flex-direction: row;
         /* border-bottom: 3px solid var(--secundary-color); */
         /* box-shadow: 20px 0 5px 0 var(--secundary-color); */
-        
     }
 
     header ul {
@@ -214,6 +263,7 @@ footer {
     .principal {
         width: 100%;
         height: 100%;
+        align-items: center;
     }
 
     main {
@@ -224,18 +274,18 @@ footer {
         }
 
 
-    .perfil-image {
-        margin: 20px 0 0 0;
+   .perfil-image {
+        margin: 0 0 40px 0;
         width: 200px;
         height: 200px;
         border-radius: 50%;
         /* box-shadow: 5px 5px 15px 5px #000000; */
-        position: initial;
+        
     
     }
 
     .principal .perfil-frame {
-        margin: 50px;
+        margin: 20px 50px 20px 50px;
         width: 100%;
         /* background-color: var(--secundary-color); */
         /* border: 3px solid #555; */
@@ -248,8 +298,8 @@ footer {
 
     .text-frame {
         width: 100%;
-        margin-top: 5%;
-
+        display: flex;
+        align-items: center;
     }
 
     .aside-right {
@@ -272,12 +322,13 @@ footer {
             margin-right: 10px;
             display: flex;
             flex-direction: row;
+            align-items: center;
         }
 
-        .icons-footer {
+        .icons-footer-github {
             margin-left: 20px;
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -285,10 +336,38 @@ footer {
             background-color: var(--secundary-color);
             border-radius: 25%;
         }
+
+        .icons-footer-whatsapp {
+            margin-left: 20px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--secundary-color);
+            border-radius: 25%;
+        }
+
+        .icons-footer-linkedin {
+            margin-left: 20px;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--secundary-color);
+            border-radius: 25%;
+        }
+
+        footer .light-mode {
+            background-color: var(--white-primary);
+        }
         
-        .icons-footer img {
-            width: 25px;
-            height: 25px;
+        .main-footer-icons img {
+            width: 24px;
+            height: 24px;
         }
 
 }

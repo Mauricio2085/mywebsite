@@ -1,12 +1,8 @@
-const express = require('express');
-const app = express();
-const port = 3000;
+import {template} from './templates/template'
+import './styles/styles.css'
 
-app.get('/', (req, res) => {
-
-})
-
-
-app.listen(port, ()=> {
-    console.log('online');
-})
+(async function App(){
+    
+    const root = null || document.getElementById('root')
+    root.innerHTML= await template();
+})(); 
