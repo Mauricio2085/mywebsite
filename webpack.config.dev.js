@@ -25,8 +25,9 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [//MiniCssExtractPlugin.loader,
+                use: [MiniCssExtractPlugin.loader,
                     'css-loader',
+                    'postcss-loader'
                    ],
             },
             {
@@ -41,9 +42,9 @@ module.exports = {
             template: './public/index.html',
             filename: 'index.html'
         }),
-        // new MIniCssExtractPlugin({
-        //     filename: 'main.css'
-        // }),
+        new MIniCssExtractPlugin({
+            filename: 'main.css'
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 {

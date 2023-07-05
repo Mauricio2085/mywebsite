@@ -29,8 +29,9 @@ module.exports = {
             {
                 test: /\.css$/,
                 include: path.resolve(__dirname, 'src'),
-                use: [//MiniCssExtractPlugin.loader,
+                use: [MiniCssExtractPlugin.loader,
                 'css-loader',
+                'postcss-loader'
                 ],
             },
             {
@@ -45,9 +46,9 @@ module.exports = {
             template: './public/index.html',
             filename: '[name].[contenthash].html'
         }),
-        // new MiniCssExtractPlugin({
-        //     filename: 'main.css'
-        // }),
+        new MiniCssExtractPlugin({
+            filename: 'main.css'
+        }),
         new CopyWebpackPlugin({
             patterns: [
                 {
