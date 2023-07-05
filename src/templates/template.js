@@ -5,7 +5,7 @@ import perfilPhoto from '../assets/images/IMG_2751.jpg';
 import menu from '../assets/images/menu-hamburguesa.png';
 
 const template = async () => {
-    const view = `<header class=" bg-white flex flex-row-reverse items-center justify-between h-16 font-semibold italic text-2xl text-zinc-800 font-[ubuntu] px-20">
+    const view = `<header class="fixed w-full bg-green-100 flex flex-row-reverse items-center justify-between h-16 font-semibold italic text-2xl text-zinc-800 font-[ubuntu] px-20">
     <div class="logo">
         <img src=${menu} alt="">
     </div>
@@ -18,7 +18,7 @@ const template = async () => {
     </ul>
     </nav>  
 </header>
-<span class="w-full">
+<span class="w-full relative top-16">
     <img class="w-full h-[450px] object-cover opacity-40" src="../assets/images/jumbo.jpg" />
     <section class="flex justify-center items-center w-full h-full relative top-[-370px]">   
         <div class="w-3/4 flex justify-center items-center">
@@ -29,8 +29,8 @@ const template = async () => {
         </div>
     </section>
 </span>
-<main class=" flex flex-col w-full px-20 items-center">
-    <h1 id="portfolio" class="font-semibold italic text-6xl text-black font-[ubuntu] pb-8">MI PORTAFOLIO</h1>
+<main class=" flex flex-col w-full px-20 pb-20 items-center">
+    <h1 id="portfolio" class="font-semibold italic text-6xl text-black font-[ubuntu] pb-16">MI PORTAFOLIO</h1>
     <section class="grid grid-cols-3 grid-rows-2 gap-4 px-60 justify-center">
         <div class="flex flex-col items-center">
             <h2>Proyecto 1</h2>
@@ -58,7 +58,7 @@ const template = async () => {
         </div>
     </section> 
 </main>
-<footer class="text-[--secundary-color] w-full flex justify-between items-center font-[ubuntu]">
+<footer class="text-[--secundary-color] w-full flex justify-between items-center font-[ubuntu] h-40 bg-green-100">
 <div class="ml-3 w-1/2 flex-col>
     <a class="text-md mt-1">Cel: +57 310 678 9371</a>
     <p class="mt-1">Pereira - Risaralda - Colombia</p>
