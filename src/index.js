@@ -1,8 +1,11 @@
-import {template} from './templates/template'
+import { createRoot } from 'react-dom/client'
+import {App} from './templates/App'
 import './styles/styles.css'
+import React from 'react';
 
-(async function App(){
+
     
-    const root = null || document.getElementById('root')
-    root.innerHTML= await template();
-})(); 
+    const root = null || createRoot(document.getElementById('root'));
+    root.render(<App />);
+
+// Renderiza tu componente React en su lugar

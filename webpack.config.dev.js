@@ -11,13 +11,13 @@ module.exports = {
         filename: '[name].[contenthash].js'
     },
     resolve: {
-        extensions: ['.js']
+        extensions: ['.js', '.jsx']
     },
     mode: 'development',
     module: {
         rules: [
             {
-                test: /\.m?js$/,
+                test: /\.m?js|jsx$/,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
