@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.txt-shadow {
+    text-shadow: rgb(213, 214, 241) 0px 0px 40px;
+}
+
+.shadowHover:hover {
+    text-shadow: rgb(213, 214, 241) 0px 0px 40px;
+    color: white;
+}

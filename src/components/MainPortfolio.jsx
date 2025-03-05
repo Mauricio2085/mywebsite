@@ -1,34 +1,36 @@
-import { dataProjects } from '../utils/data';
-import React from 'react';
-
+import { dataProjects } from "../utils/data";
+import React, { lazy } from "react";
+import { MainProject } from "./MainProject";
 
 const MainPortfolio = () => {
-    let choiceapp;
-    const projectPortfolio = dataProjects.map(project => {
-        return {...project,}
-})
-return (
+  return (
     <>
-        <main className=" w-auto px-60 pb-20 items-center relative top-[-260px]">
-            <div className=" flex flex-col w-full items-center bg-gray-200 shadow-xl rounded-md">
-                <h1 id="portfolio" className="font-semibold italic text-4xl text-black font-[ubuntu] pt-8 pb-8">PORTFOLIO</h1>
-                <p className='text-xl w-full px-3 font-[ubuntu]'>Here you can see and teaste a little of my work...<br/> Enjoy it!!
-                </p>
-                <section className="grid grid-cols-2 grid-flow-row gap-4 justify-center px-3 w-full">
-                    {projectPortfolio.map(project => {
-                        return(
-                            <div key={project.id}>
-                                <h4>{project.name}</h4>
-                                <img src="../assets/images/IMG_3686.jpg"  alt="" />
-                            </div>                                      
-                            );
-                        })
-                    }
-                </section>
-            </div>
-        </main>
-        </>
-        )
-}
+      <main className=" px-5 md:px-60 items-center bg-gray-200">
+        <div className=" md:flex md:flex-col md:w-full md:items-center md:rounded-md">
+          <h1 className=" text-center font-semibold italic text-4xl text-black font-[ubuntu] pt-8 pb-8">
+            PORTFOLIO
+          </h1>
+          <p className=" text-center font-normal text-xl w-full font-[ubuntu] mb-8 md:mb-0">
+            Here you can see and taste a little of my work... Enjoy it!!
+          </p>
+          <section className=" flex flex-col md:grid md:grid-cols-2 md:grid-flow-row md:gap-4 justify-center md:justify-center items-center md:justify-items-center md:py-20 md:w-full">
+            {dataProjects.map((project) => {
+              return (
+                <MainProject
+                  key={project.id}
+                  projectName={project.name}
+                  image={project.image}
+                  description={project.description}
+                  skills={project.skills}
+                  avatar={project.avatar}
+                />
+              );
+            })}
+          </section>
+        </div>
+      </main>
+    </>
+  );
+};
 
 export { MainPortfolio };

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header className="fixed w-full bg-[#161b22] flex flex-row-reverse items-center justify-between h-16 font-semibold italic text-2xl font-[ubuntu] px-20 z-10 text-gray-300">
+    <div className="logo hidden">
+        <img src={menu} alt=""/>
+    </div>
+    <nav>
+    <ul className="text-sm flex w-full justify-end">
+        <li id="resume" className="mr-11"><a href="cv-web-developer.html">Resume</a></li>
+        <li className="mr-11">Portfolio</li>
+        <li className="mr-11">Blog</li>
+        <li className="mr-11">Settings</li>
+    </ul>
+    </nav>  
+</header>
+<section>
+    <img className="w-full h-[500px] object-cover opacity-40" src="../assets/images/jumbo.jpg" />
+    <div className="flex justify-center items-center w-full relative top-[-370px]">   
+        <div className="w-3/4 flex justify-center items-center">
+            <div>
+                <img className="w-52 h-52 object-cover rounded-[50%] p-3" src={perfilPhoto} alt="perfil"/>
+            </div>
+            <div>
+                <p className="text-gray-300 text-xl w-3/4 font-[ubuntu]"> Hi! My name is Mauricio Ocampo and I am Electronic engineer and Fullstack developer.<br />I Work with passion and excellent actitude and always I give the best from me to others
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+<main className=" w-auto px-96 pb-20 items-center relative top-[-260px]">
+    <div className=" flex flex-col w-full items-center bg-gray-200 shadow-xl rounded-md">
+        <h1 id="portfolio" className="font-semibold italic text-4xl text-black font-[ubuntu] pt-8 pb-8">PORTFOLIO</h1>
+        <p className='text-xl w-full px-3 font-[ubuntu]'>Here you can see and taste a little of my work...<br/> Enjoy it!!
+        </p>
+        <section className="grid grid-cols-2 grid-flow-row gap-4 justify-center px-3 w-full">
+    </div>
+</main>
+<footer className="text-[--secundary-color] w-full flex justify-between items-center font-[ubuntu] h-40 bg-[#161b22]">
+    <div className="ml-3 w-1/2 flex-col">
+        <a className="text-md mt-1" >Cel: +57 310 678 9371</a>
+        <p className="mt-1">Pereira - Risaralda - Colombia</p>
+    </div>
+    <div className="flex m-8">
+        <div className="w-8 mr-2 bg-white">
+            <picture>
+                <img src={github} alt=""/>
+            </picture>
+        </div>
+    <div className="w-11 ml-2 bg-white">
+        <picture>
+            <img src={whatsapp} alt=""/>
+        </picture>
+    </div>
+    <div className="w-11 ml-2 bg-white">
+        <picture>
+            <img src={linkedin} alt=""/>
+        </picture>
+    </div>
+    </div>
+</footer>
+</body>
+</html>
+

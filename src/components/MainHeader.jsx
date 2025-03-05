@@ -1,21 +1,21 @@
 import React from "react";
-import menu from '../assets/images/menu-hamburguesa.png';
+import { AiOutlineMenu } from "react-icons/ai";
 
 const MainHeader = () => {
     return (
-        <header className="fixed w-full bg-[#161b22] flex flex-row-reverse items-center justify-between h-16 font-semibold italic text-2xl font-[ubuntu] px-20 z-10 text-gray-300">
-        <div className="logo hidden">
-            <img src={menu} alt=""/>
-        </div>
-        <nav>
-        <ul className="text-sm flex w-full justify-end">
-            <li id="resume" className="mr-11"><a href="cv-web-developer.html">Resume</a></li>
-            <li className="mr-11">Portfolio</li>
-            <li className="mr-11">Blog</li>
-            <li className="mr-11">Settings</li>
-        </ul>
-        </nav>  
-    </header>
+        <header className=" w-full md:w-full bg-gradient-to-r from-[#1b2129] to-[#111213] block md:flex md:flex-row-reverse md:items-center md:justify-between h-20 md:h-20 text-2xl font-[ubuntu] pt-8 px-5 md:px-60 text-gray-300">
+    <div className=" md:hidden w-12 h-12">
+        <AiOutlineMenu size={48} />
+    </div>
+    <nav>
+    <ul className="hidden md:text-sm md:flex md:w-full md:justify-end md:h-7 md:items-center">
+        <li id="resume" className=" font-semibold italic mr-11 shadow-lg shadowHover rounded-md">Resume</li>
+        <li className=" font-semibold italic mr-11 shadow-lg shadowHover">Portfolio</li>
+        <li className=" font-semibold italic mr-11 items-center shadow-lg shadowHover">About me</li>
+        <li className=" font-semibold italic mr-11 shadow-lg shadowHover">Settings</li>
+    </ul>
+    </nav>  
+</header>
     );
 };
 
