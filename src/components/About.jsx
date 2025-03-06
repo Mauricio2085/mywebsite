@@ -1,7 +1,7 @@
 import React from "react";
 import PerfilLogo from "../assets/images/IMG_3686.jpg";
 
-const MainAbout = () => {
+const About = () => {
   return (
     <>
       <div className=" flex flex-col md:flex md:flex-row md:w-full items-center bg-gradient-to-r from-[#1b2129] to-[#111213] px-5 md:px-60 py-8 md:py-20 h-fit">
@@ -38,4 +38,4 @@ const MainAbout = () => {
   );
 };
 
-export default MainAbout;
+export { About };

@@ -1,21 +1,18 @@
-import React, { Fragment } from "react";
-import { lazy } from "react";
-const MainAbout = lazy(() => import("./components/MainAbout"));
-import { MainPortfolio } from "./components/MainPortfolio";
-import { MainHeader } from "./components/MainHeader";
-import { MainFooter } from "./components/MainFooter";
-import { MainJumbo } from "./components/MainJumbo";
+import React from "react";
+import { About } from "./components/About";
+import { Portfolio } from "./components/Portfolio";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
+import { Jumbo } from "./components/Jumbo";
 
 const App = () => {
   return (
     <>
-      <MainHeader />
-      <MainJumbo />
-      <MainPortfolio />
-
-      <MainAbout />
-
-      <MainFooter />
+      <Header />
+      <Jumbo />
+      <Portfolio />
+      <About />
+      <Footer />
     </>
   );
 };
