@@ -5,12 +5,12 @@ import { Project } from "./Project";
 const Portfolio = () => {
   return (
     <>
-      <main className=" px-5 lg:px-24 xl:px-40 items-center bg-gray-200 font-[ubuntu]">
-        <div className=" md:flex md:flex-col md:w-full md:items-center md:rounded-md">
-          <h1 className=" text-center font-semibold italic text-[40px] text-black pt-8 pb-8">
+      <main className="items-center bg-gray-200 px-5 font-[ubuntu] lg:px-24 xl:px-40">
+        <div className="md:flex md:w-full md:flex-col md:items-center md:rounded-md">
+          <h1 className="pb-8 pt-8 text-center text-[40px] font-semibold italic text-black">
             PORTFOLIO
           </h1>
-          <p className=" text-center font-normal text-xl w-full mb-8 md:mb-0">
+          <p className="mb-8 w-full text-center text-xl font-normal md:mb-0">
             Here you can see and test a little of my work... Enjoy it!!
           </p>
           <Data />

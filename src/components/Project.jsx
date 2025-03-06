@@ -3,43 +3,35 @@ import { BiSolidLike } from "react-icons/bi";
 
 const Project = ({ projectName, image, description, avatar, skills }) => {
   return (
-    <div className="flex flex-col rounded-xl bg-white shadow-lg w-80 mb-8 overflow-hidden border border-gray-200 hover:shadow-2xl transition-shadow duration-300">
+    <div className="mb-8 flex w-80 flex-col overflow-hidden rounded-xl border border-gray-200 bg-white shadow-lg transition-shadow duration-300 hover:shadow-2xl">
       {/* Header */}
-      <div className="flex items-center p-4 bg-gray-100">
-        <div className="w-10 h-10">{avatar}</div>
-        <h4 className="ml-3 text-lg font-semibold text-gray-800">
-          {projectName}
-        </h4>
+      <div className="flex items-center bg-gray-100 p-4">
+        <div className="h-10 w-10">{avatar}</div>
+        <h4 className="ml-3 text-lg font-semibold text-gray-800">{projectName}</h4>
       </div>
 
       {/* Image */}
-      <img
-        className="w-full h-40 object-cover"
-        src={image}
-        alt="Project Preview"
-      />
+      <img className="h-40 w-full object-cover" src={image} alt="Project Preview" />
 
       {/* Description */}
       <p className="p-4 text-sm text-gray-600">{description}</p>
 
       {/* Skills */}
-      <div className="px-4 py-2 flex flex-wrap items-center">
-        <span className="text-sm font-semibold text-gray-700 mr-2">
-          Skills:
-        </span>
+      <div className="flex flex-wrap items-center px-4 py-2">
+        <span className="mr-2 text-sm font-semibold text-gray-700">Skills:</span>
         {skills.map((skill) => (
-          <div key={skill.id} className="text-gray-600 text-xl mr-2">
+          <div key={skill.id} className="mr-2 text-xl text-gray-600">
             {skill.icon}
           </div>
         ))}
       </div>
 
       {/* Footer */}
-      <div className="flex justify-between items-center p-4 bg-gray-100 border-t">
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-700 transition-colors">
+      <div className="flex items-center justify-between border-t bg-gray-100 p-4">
+        <button className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700">
           Conoce más...
         </button>
-        <button className="text-gray-600 hover:text-blue-500 transition-colors">
+        <button className="text-gray-600 transition-colors hover:text-blue-500">
           <BiSolidLike size={24} />
         </button>
       </div>

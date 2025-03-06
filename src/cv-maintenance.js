@@ -1,5 +1,5 @@
-const maintenanceCv = async () =>{
-    const viewMantenance = `<!DOCTYPE html>
+const maintenanceCv = async () => {
+  const viewMantenance = `<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -191,7 +191,7 @@ const maintenanceCv = async () =>{
     </main>
 </body>
 </html>`;
-return viewMantenance;
+  return viewMantenance;
 };
 
-export { maintenanceCv }
+export { maintenanceCv };

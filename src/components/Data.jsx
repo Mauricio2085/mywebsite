@@ -159,7 +159,7 @@ const Data = () => {
     // },
   ];
   return (
-    <section className=" w-full flex flex-col md:grid md:grid-cols-2 md:grid-flow-row md:gap-4 justify-center md:justify-center items-center md:justify-items-center md:py-20 xl:grid-cols-3">
+    <section className="flex w-full flex-col items-center justify-center md:grid md:grid-flow-row md:grid-cols-2 md:justify-center md:justify-items-center md:gap-4 md:py-20 xl:grid-cols-3">
       {dataProject.map((project) => {
         return (
           <Project

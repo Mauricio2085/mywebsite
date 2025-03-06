@@ -3,17 +3,18 @@ import perfilPhoto from "../assets/images/IMG_2751.jpg";
 
 const Jumbo = () => {
   return (
-    <section className="w-full py-8 md:py-0 md:flex md:justify-center md:items-center md:justify-items-center  md:h-[600px] px-5 lg:px-24 xl:px-40">
-      <div className="w-full flex flex-col md:flex-row justify-center xl:justify-center items-center xl:items-center md:justify-items-center">
+    <section className="w-full px-5 py-8 md:flex md:h-[600px] md:items-center md:justify-center md:justify-items-center md:py-0 lg:px-24 xl:px-40">
+      <div className="flex w-full flex-col items-center justify-center md:flex-row md:justify-items-center xl:items-center xl:justify-center">
         <img
-          className="w-60 h-60 xl:w-80 xl:h-80 object-cover rounded-[50%] p-5"
+          className="h-60 w-60 rounded-full border-4 border-gray-300 object-cover p-2 shadow-lg xl:h-80 xl:w-80"
           src={perfilPhoto}
           alt="perfil"
         />
-        <p className="w-full my-5 md:pl-5 text-white text-center md:text-left text-xl md:w-3/4 font-[ubuntu] drop-shadow-2xl txt-shadow xl:px-20">
-          Hi! My name is Mauricio Ocampo and I am Electronic engineer and
-          Fullstack developer. I Work with passion and excellent actitude and
-          always I give the best from me to others
+        <p className="txt-shadow my-5 w-full text-center font-[ubuntu] text-xl text-white drop-shadow-2xl md:w-3/4 md:pl-5 md:text-left xl:px-20">
+          Hi! My name is <span className="font-bold text-blue-400">Mauricio Ocampo</span>. I'm an{" "}
+          <span className="font-bold">Electronic Engineer</span> and{" "}
+          <span className="font-bold">Fullstack Developer</span>. I work with passion, a great
+          attitude, and always give my best to help others.
         </p>
       </div>
     </section>
