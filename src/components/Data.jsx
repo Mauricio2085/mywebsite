@@ -1,5 +1,5 @@
 import React from "react";
-import projectPhoto from "../assets/images/IMG_3688.jpg";
+import projectPhoto from "../assets/images/smartPocket.png";
 import { GrVmMaintenance } from "react-icons/gr";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaServer } from "react-icons/fa";
@@ -85,42 +85,42 @@ const Data = () => {
         },
       ],
     },
-    {
-      id: 2,
-      name: "Smart-Pocket-Backend",
-      gitHubUrl: "hgjfhjjgjkjkllk",
-      image: projectPhoto,
-      description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam sed, vel tempore provident ut",
-      avatar: <FaServer size={20} />,
-      skills: [
-        {
-          id: 1,
-          name: "html",
-          icon: <img src={html} className="w-[24px]" />,
-        },
-        {
-          id: 2,
-          name: "Css3",
-          icon: <DiCss3 fill={"#2d53e5"} size={24} />,
-        },
-        {
-          id: 3,
-          name: "Javascript",
-          icon: <img src={javascript} className="w-[24px]" />,
-        },
-        {
-          id: 4,
-          name: "Reactjs",
-          icon: <FaReact fill={"#00ffff"} size={24} />,
-        },
-        {
-          id: 5,
-          name: "Nextjs",
-          icon: <SiNextdotjs size={24} />,
-        },
-      ],
-    },
+    // {
+    //   id: 2,
+    //   name: "Smart-Pocket-Backend",
+    //   gitHubUrl: "hgjfhjjgjkjkllk",
+    //   image: projectPhoto,
+    //   description:
+    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam sed, vel tempore provident ut",
+    //   avatar: <FaServer size={20} />,
+    //   skills: [
+    //     {
+    //       id: 1,
+    //       name: "html",
+    //       icon: <img src={html} className="w-[24px]" />,
+    //     },
+    //     {
+    //       id: 2,
+    //       name: "Css3",
+    //       icon: <DiCss3 fill={"#2d53e5"} size={24} />,
+    //     },
+    //     {
+    //       id: 3,
+    //       name: "Javascript",
+    //       icon: <img src={javascript} className="w-[24px]" />,
+    //     },
+    //     {
+    //       id: 4,
+    //       name: "Reactjs",
+    //       icon: <FaReact fill={"#00ffff"} size={24} />,
+    //     },
+    //     {
+    //       id: 5,
+    //       name: "Nextjs",
+    //       icon: <SiNextdotjs size={24} />,
+    //     },
+    //   ],
+    // },
     // {
     //   id: 4,
     //   name: "Fisica",
@@ -159,7 +159,7 @@ const Data = () => {
     // },
   ];
   return (
-    <section className="flex w-full flex-col items-center justify-center md:grid md:grid-flow-row md:grid-cols-2 md:justify-center md:justify-items-center md:gap-4 md:py-20 xl:grid-cols-3">
+    <section className="flex w-full flex-col items-center justify-center md:grid md:grid-flow-col md:justify-center md:justify-items-center md:gap-4 md:py-20">
       {dataProject.map((project) => {
         return (
           <Project

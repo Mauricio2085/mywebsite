@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.txt-shadow {
-  text-shadow: rgb(213, 214, 241) 0px 0px 40px;
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: rgb(213, 214, 241) 0px 0px 40px
+  }
 }
 
-.shadowHover:hover {
-  text-shadow: rgb(213, 214, 241) 0px 0px 40px;
-  color: white;
+body {
+  font-family: Inter;
 }

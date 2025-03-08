@@ -12,6 +12,7 @@ const App = () => {
       <Jumbo />
       <Portfolio />
       <About />
+      <Portfolio />
       <Footer />
     </>
   );

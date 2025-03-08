@@ -1,31 +1,41 @@
 import React from "react";
-import PerfilLogo from "../assets/images/IMG_3686.jpg";
+import PerfilLogo from "../assets/images/IMG_2751.jpg";
 
 const About = () => {
   return (
     <>
-      <div className="flex h-fit flex-col items-center bg-gradient-to-r from-[#1b2129] to-[#111213] px-5 py-8 md:flex md:w-full md:flex-row md:px-60 md:py-20">
-        <section className="flex w-full flex-col md:w-1/2">
-          <h1 className="mb-4 text-4xl font-semibold text-slate-200 md:text-6xl">About me</h1>
-          <p className="h-full text-base text-gray-300">
-            Deserunt et incididunt nisi qui qui non eu anim magna nulla incididunt veniam laboris.
-            Voluptate fugiat ullamco labore sit exercitation id ea pariatur Lorem excepteur nisi
-            occaecat minim. Id minim eiusmod esse pariatur aute.Enim laborum enim quis occaecat
-            culpa enim. Qui ullamco nostrud occaecat anim adipisicing nulla velit mollit enim.
-            Mollit incididunt laborum ex laborum ipsum. Adipisicing exercitation pariatur eu sit
-            elit excepteur laboris qui mollit ad ea. Lorem officia sint elit consequat et aute
-            fugiat non deserunt ipsum. Duis commodo do officia cupidatat proident aliqua ea proident
-            Lorem.
+      <section
+        id="about"
+        className="flex flex-col items-center justify-center bg-gradient-to-r from-[#1b2129] to-[#111213] px-5 md:w-full lg:h-[750px] lg:flex-row lg:px-24 xl:px-40"
+      >
+        <section className="flex w-full flex-col items-center">
+          <h1 className="py-8 text-3xl font-semibold text-slate-200 md:py-12 md:text-[40px]">
+            ABOUT ME
+          </h1>
+          <p className="pb-8 text-center text-sm text-gray-300 md:text-base">
+            I have always been passionate about technology and problem-solving. For several years, I
+            worked in industrial automation, where I developed skills in process control and system
+            optimization. However, my curiosity about software and its impact on the industry led me
+            to explore web development, a field where I found my true calling. I specialize in
+            JavaScript, React, and Node.js, building full-stack applications with a focus on
+            frontend development. I enjoy designing intuitive interfaces and optimizing user
+            experience while ensuring that my code is clean, maintainable, and scalable.
+            Additionally, I strive to follow best development practices, including design patterns
+            and automated testing. Currently, I am continuously improving my skills and exploring
+            modern technologies to create efficient and high-performance solutions. I am looking for
+            opportunities to contribute my knowledge and continue growing as a developer.
             <br />
             <br />
           </p>
         </section>
-        <section className="w-full md:w-1/2">
-          <picture className="flex h-1/4 w-full justify-center rounded-xl md:flex md:justify-center">
-            <img className="h-1/4 w-1/2 rounded-xl object-cover" src={PerfilLogo} alt="Optional" />
-          </picture>
-        </section>
-      </div>
+        <picture className="mb-20 flex h-max w-full items-center justify-center rounded-xl lg:mb-0">
+          <img
+            className="max-w-[250px] rounded-xl object-cover lg:max-w-[300px] xl:max-w-sm"
+            src={PerfilLogo}
+            alt="Optional"
+          />
+        </picture>
+      </section>
     </>
   );
 };

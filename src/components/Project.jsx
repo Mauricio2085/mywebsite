@@ -28,8 +28,8 @@ const Project = ({ projectName, image, description, avatar, skills }) => {
 
       {/* Footer */}
       <div className="flex items-center justify-between border-t bg-gray-100 p-4">
-        <button className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-700">
-          Conoce más...
+        <button className="rounded-lg bg-[#1b2129] px-4 py-2 text-sm font-semibold text-white transition-colors hover:text-[#1b2129] hover:text-shadow hover:bg-cyan-300">
+          Conoce más ...
         </button>
         <button className="text-gray-600 transition-colors hover:text-blue-500">
           <BiSolidLike size={24} />

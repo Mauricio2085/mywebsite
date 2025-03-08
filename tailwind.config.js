@@ -7,6 +7,9 @@ module.exports = {
         "principal-dark": "#111213",
         "second-dark": "#1b2129",
       },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+      },
     },
   },
   plugins: [],
