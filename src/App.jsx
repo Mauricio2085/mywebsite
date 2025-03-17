@@ -4,6 +4,7 @@ import { Portfolio } from "./components/Portfolio";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { Jumbo } from "./components/Jumbo";
+import { Skills } from "./components/Skills";
 
 const App = () => {
   return (
@@ -12,7 +13,7 @@ const App = () => {
       <Jumbo />
       <Portfolio />
       <About />
-      <Portfolio />
+      <Skills />
       <Footer />
     </>
   );

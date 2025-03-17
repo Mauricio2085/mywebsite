@@ -8,7 +8,7 @@ const About = () => {
         id="about"
         className="flex flex-col items-center justify-center bg-gradient-to-r from-[#1b2129] to-[#111213] px-5 md:w-full lg:h-[750px] lg:flex-row lg:px-24 xl:px-40"
       >
-        <section className="flex w-full flex-col items-center">
+        <section className="flex w-full max-w-5xl flex-col items-center">
           <h1 className="py-8 text-3xl font-semibold text-slate-200 md:py-12 md:text-[40px]">
             ABOUT ME
           </h1>

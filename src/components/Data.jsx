@@ -51,7 +51,7 @@ const Data = () => {
     // },
     {
       id: 1,
-      name: "Smart-Pocket-Frontend",
+      name: "Smart-Pocket",
       gitHubUrl: "jjgfjdtfhtyfdfh",
       image: projectPhoto,
       description:

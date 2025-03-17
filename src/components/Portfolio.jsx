@@ -19,7 +19,7 @@ const Portfolio = () => {
             <h1 className="py-8 text-center text-3xl font-semibold italic text-black md:text-[40px]">
               PORTFOLIO
             </h1>
-            <p className="mb-8 w-full text-center text-sm font-normal md:mb-0 md:text-xl">
+            <p className="mb-8 w-full text-center text-sm font-normal text-gray-500 md:mb-0 md:text-xl">
               Explore my portfolio and see what I’ve built. I hope you like it as much as I enjoyed
               creating it!
             </p>
