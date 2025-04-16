@@ -6,35 +6,36 @@ const About = () => {
     <>
       <section
         id="about"
-        className="flex flex-col items-center justify-center bg-gradient-to-r from-[#1b2129] to-[#111213] px-5 md:w-full lg:h-[750px] lg:flex-row lg:px-24 xl:px-40"
+        className="mx-auto mb-20 flex w-full flex-col px-5 md:max-w-2xl md:px-0 xl:max-w-4xl"
       >
-        <section className="flex w-full max-w-5xl flex-col items-center">
-          <h1 className="py-8 text-3xl font-semibold text-slate-200 md:py-12 md:text-[40px]">
-            ABOUT ME
-          </h1>
-          <p className="pb-8 text-center text-sm text-gray-300 md:text-base">
+        <h1 className="text-shadow mb-8 mt-4 text-center text-3xl font-semibold italic text-white md:text-left md:text-[40px]">
+          About me
+        </h1>
+        <article className="flex w-full flex-col items-center gap-8 md:max-w-2xl md:flex-row xl:max-w-4xl">
+          <p className="order-2 text-sm text-gray-300 md:order-1 md:text-base">
             I have always been passionate about technology and problem-solving. For several years, I
-            worked in industrial automation, where I developed skills in process control and system
-            optimization. However, my curiosity about software and its impact on the industry led me
-            to explore web development, a field where I found my true calling. I specialize in
-            JavaScript, React, and Node.js, building full-stack applications with a focus on
-            frontend development. I enjoy designing intuitive interfaces and optimizing user
-            experience while ensuring that my code is clean, maintainable, and scalable.
-            Additionally, I strive to follow best development practices, including design patterns
-            and automated testing. Currently, I am continuously improving my skills and exploring
-            modern technologies to create efficient and high-performance solutions. I am looking for
-            opportunities to contribute my knowledge and continue growing as a developer.
+            worked in <strong className="font-semibold text-cyan-300">industrial automation</strong>
+            , where I developed skills in process control and system optimization. However, my
+            curiosity about software and its impact on the industry led me to explore web
+            development, a field where I found my true calling. I specialize in JavaScript, React,
+            and Node.js, building full-stack applications with a focus on frontend development. I
+            enjoy designing intuitive interfaces and optimizing user experience while ensuring that
+            my code is clean, maintainable, and scalable. Additionally, I strive to follow best
+            development practices, including design patterns and automated testing. Currently, I am
+            continuously improving my skills and exploring modern technologies to create efficient
+            and high-performance solutions. I am looking for opportunities to contribute my
+            knowledge and continue growing as a developer.
             <br />
             <br />
           </p>
-        </section>
-        <picture className="mb-20 flex h-max w-full items-center justify-center rounded-xl lg:mb-0">
-          <img
-            className="max-w-[250px] rounded-xl object-cover lg:max-w-[300px] xl:max-w-sm"
-            src={PerfilLogo}
-            alt="Optional"
-          />
-        </picture>
+          <picture className="order-1 flex w-full items-center justify-center rounded-xl md:order-2 lg:mb-0">
+            <img
+              className="max-h-[250px] max-w-[250px] rounded-xl object-cover"
+              src={PerfilLogo}
+              alt="Optional"
+            />
+          </picture>
+        </article>
       </section>
     </>
   );

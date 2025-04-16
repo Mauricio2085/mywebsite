@@ -1,5 +1,5 @@
 import React from "react";
-import projectPhoto from "../assets/images/smartPocket.png";
+import projectPhoto from "../assets/images/Smart_porfolio.png";
 import { GrVmMaintenance } from "react-icons/gr";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaServer } from "react-icons/fa";
@@ -7,159 +7,97 @@ import { FaListCheck } from "react-icons/fa6";
 import { FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
-import javascript from "../assets/images/js_icon.png";
 import html from "../assets/images/html_icon.png";
 import { Project } from "./Project";
+import tailwindcss from "../assets/images/tailwindcss-mark.d52e9897.svg";
+import react from "../assets/images/react.svg";
+import node from "../assets/images/nodejs.svg";
+import postgresql from "../assets/images/postgresql.svg";
+import express from "../assets/images/express.svg";
+import typescript from "../assets/images/typescript.svg";
 
 const Data = () => {
   const dataProject = [
-    // {
-    //   id: 3,
-    //   name: "Mantenance-app",
-    //   gitHubUrl: "jjgfjdfh",
-    //   image: projectPhoto,
-    //   description:
-    //     "Una super app de mantenimiento para que gestiones tus órdenes de trabajo y actividades como nunca!!",
-    //   avatar: <GrVmMaintenance size={20} />,
-    //   skills: [
-    //     {
-    //       id: 1,
-    //       name: "html",
-    //       icon: <img src={html} className="w-[24px]" />,
-    //     },
-    //     {
-    //       id: 2,
-    //       name: "Css3",
-    //       icon: <DiCss3 fill={"#2d53e5"} size={24} />,
-    //     },
-    //     {
-    //       id: 3,
-    //       name: "Javascript",
-    //       icon: <img src={javascript} className="w-[24px]" />,
-    //     },
-    //     {
-    //       id: 4,
-    //       name: "Reactjs",
-    //       icon: <FaReact fill={"#00ffff"} size={24} />,
-    //     },
-    //     {
-    //       id: 5,
-    //       name: "Nextjs",
-    //       icon: <SiNextdotjs size={24} />,
-    //     },
-    //   ],
-    // },
     {
       id: 1,
-      name: "Smart-Pocket",
+      name: "Smart-Pocket - Venta de productos de garaje",
       gitHubUrl: "jjgfjdtfhtyfdfh",
       image: projectPhoto,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam sed, vel tempore provident ut",
+        "Aplicación para venta de productos de garaje, donde puedes comprar y vender productos de segunda mano. Puedes consultar productos al propietario vía Whatsapp. Creado con React y Tailwind CSS.",
       avatar: <FaCartShopping size={20} />,
       skills: [
         {
           id: 1,
-          name: "html",
-          icon: <img src={html} className="w-[24px]" />,
+          name: "React",
+          icon: <img src={react} className="w-[24px]" />,
         },
         {
           id: 2,
-          name: "Css3",
-          icon: <DiCss3 fill={"#2d53e5"} size={24} />,
+          name: "Tailwind",
+          icon: <img src={tailwindcss} className="w-[24px]" />,
         },
         {
           id: 3,
-          name: "Javascript",
-          icon: <img src={javascript} className="w-[24px]" />,
+          name: "Node",
+          icon: <img src={node} className="w-[24px]" />,
         },
         {
           id: 4,
-          name: "Reactjs",
-          icon: <FaReact fill={"#00ffff"} size={24} />,
+          name: "Express",
+          icon: <img src={express} className="w-[24px]" />,
         },
         {
           id: 5,
-          name: "Nextjs",
-          icon: <SiNextdotjs size={24} />,
+          name: "Postgresql",
+          icon: <img src={postgresql} className="w-[24px]" />,
         },
       ],
     },
-    // {
-    //   id: 2,
-    //   name: "Smart-Pocket-Backend",
-    //   gitHubUrl: "hgjfhjjgjkjkllk",
-    //   image: projectPhoto,
-    //   description:
-    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam sed, vel tempore provident ut",
-    //   avatar: <FaServer size={20} />,
-    //   skills: [
-    //     {
-    //       id: 1,
-    //       name: "html",
-    //       icon: <img src={html} className="w-[24px]" />,
-    //     },
-    //     {
-    //       id: 2,
-    //       name: "Css3",
-    //       icon: <DiCss3 fill={"#2d53e5"} size={24} />,
-    //     },
-    //     {
-    //       id: 3,
-    //       name: "Javascript",
-    //       icon: <img src={javascript} className="w-[24px]" />,
-    //     },
-    //     {
-    //       id: 4,
-    //       name: "Reactjs",
-    //       icon: <FaReact fill={"#00ffff"} size={24} />,
-    //     },
-    //     {
-    //       id: 5,
-    //       name: "Nextjs",
-    //       icon: <SiNextdotjs size={24} />,
-    //     },
-    //   ],
-    // },
-    // {
-    //   id: 4,
-    //   name: "Fisica",
-    //   gitHubUrl: "jjgfkjkñlfyttydfhggfjdfh",
-    //   image: projectPhoto,
-    //   description:
-    //     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia magnam sed, vel tempore provident ut",
-    //   avatar: <FaListCheck size={20} />,
-    //   skills: [
-    //     {
-    //       id: 1,
-    //       name: "html",
-    //       icon: <img src={html} className="w-[24px]" />,
-    //     },
-    //     {
-    //       id: 2,
-    //       name: "Css3",
-    //       icon: <DiCss3 fill={"#2d53e5"} size={24} />,
-    //     },
-    //     {
-    //       id: 3,
-    //       name: "Javascript",
-    //       icon: <img src={javascript} className="w-[24px]" />,
-    //     },
-    //     {
-    //       id: 4,
-    //       name: "Reactjs",
-    //       icon: <FaReact fill={"#00ffff"} size={24} />,
-    //     },
-    //     {
-    //       id: 5,
-    //       name: "Nextjs",
-    //       icon: <SiNextdotjs size={24} />,
-    //     },
-    //   ],
-    // },
+    {
+      id: 2,
+      name: "Maintenance App - Aplicación para gestión de Mantenimiento",
+      gitHubUrl: "jjgfjdtfhtyfdfh",
+      image: projectPhoto,
+      description:
+        "Aplicación para gestión de mantenimiento de equipos de aire acondicionado. Creado con React y Tailwind CSS.",
+      avatar: <FaCartShopping size={20} />,
+      skills: [
+        {
+          id: 1,
+          name: "React",
+          icon: <img src={react} className="w-[24px]" />,
+        },
+        {
+          id: 2,
+          name: "TypeScript",
+          icon: <img src={typescript} className="w-[24px]" />,
+        },
+        {
+          id: 3,
+          name: "Tailwind",
+          icon: <img src={tailwindcss} className="w-[24px]" />,
+        },
+        {
+          id: 4,
+          name: "Node",
+          icon: <img src={node} className="w-[24px]" />,
+        },
+        {
+          id: 5,
+          name: "Express",
+          icon: <img src={express} className="w-[24px]" />,
+        },
+        {
+          id: 6,
+          name: "Postgresql",
+          icon: <img src={postgresql} className="w-[24px]" />,
+        },
+      ],
+    },
   ];
   return (
-    <section className="flex w-full flex-col items-center justify-center md:grid md:grid-flow-col md:justify-center md:justify-items-center md:gap-4 md:py-20">
+    <section className="mb-10 flex w-full flex-col items-center justify-center md:justify-center md:justify-items-center md:gap-4">
       {dataProject.map((project) => {
         return (
           <Project
