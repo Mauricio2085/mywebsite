@@ -1,9 +1,6 @@
 import React from "react";
-import { BiSolidLike } from "react-icons/bi";
-import github from "../assets/images/github.svg";
-import link from "../assets/images/link.svg";
 
-const Project = ({ projectName, image, description, avatar, skills }) => {
+const Project = ({ projectName, image, description, skills }) => {
   return (
     <div className="group mb-10 flex flex-col overflow-hidden md:flex-row">
       {/* Imagen del proyecto */}
@@ -43,7 +40,11 @@ const Project = ({ projectName, image, description, avatar, skills }) => {
             rel="noopener noreferrer"
           >
             <span className="h-5 w-5">
-              <img className="" src={link} alt="Logo Link" />
+              <img
+                className=""
+                src="https://res.cloudinary.com/smartpocket/image/upload/v1744861505/porfolio/link_rmd2zm.svg"
+                alt="Logo Link"
+              />
             </span>
             <span>Preview</span>
           </a>
@@ -54,7 +55,11 @@ const Project = ({ projectName, image, description, avatar, skills }) => {
             rel="noopener noreferrer"
           >
             <span className="h-5 w-5">
-              <img className="" src={github} alt="Logo Github" />
+              <img
+                className=""
+                src="https://res.cloudinary.com/smartpocket/image/upload/v1744861513/porfolio/github_g29zhg.svg"
+                alt="Logo Github"
+              />
             </span>
             <span>Github</span>
           </a>

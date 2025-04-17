@@ -1,5 +1,4 @@
 import React from "react";
-import perfilPhoto from "../assets/images/IMG_3688.jpg";
 
 const Jumbo = () => {
   return (
@@ -7,7 +6,7 @@ const Jumbo = () => {
       <div className="flex w-full flex-col items-center justify-center md:max-w-2xl md:flex-row md:justify-items-center xl:max-w-4xl xl:items-center xl:justify-center">
         <img
           className="h-60 w-60 rounded-full border-4 border-cyan-300 object-cover p-2 shadow-lg"
-          src={perfilPhoto}
+          src="https://res.cloudinary.com/smartpocket/image/upload/v1744844824/porfolio/IMG_3688_khelzi.jpg"
           alt="perfil"
         />
         <p className="text-shadow my-5 w-full text-center text-sm text-white drop-shadow-2xl md:w-2/3 md:pl-8 md:text-left md:text-xl xl:pl-20">

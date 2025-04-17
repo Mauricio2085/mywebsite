@@ -1,13 +1,4 @@
 import React from "react";
-import tailwindcss from "../assets/images/tailwindcss-mark.d52e9897.svg";
-import git from "../assets/images/Git-Icon-1788C.svg";
-import javascript from "../assets/images/javascript.svg";
-import react from "../assets/images/react.svg";
-import node from "../assets/images/nodejs.svg";
-import postgresql from "../assets/images/postgresql.svg";
-import express from "../assets/images/express.svg";
-import nextjs from "../assets/images/nextjs.svg";
-import typescript from "../assets/images/typescript.svg";
 
 const Skills = () => {
   return (
@@ -22,35 +13,67 @@ const Skills = () => {
 
         <div class="text-shadow grid w-full flex-1 grid-cols-2 gap-8 text-white md:grid-cols-4">
           <div class="flex flex-col items-center">
-            <img src={react} class="h-16 w-16" alt="React" />
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1744844558/porfolio/react_r7bgfo.svg"
+              class="h-16 w-16"
+              alt="React"
+            />
             <p class="mt-3 text-sm md:text-base">React.js</p>
           </div>
           <div class="flex flex-col items-center">
-            <img src={javascript} class="h-16 w-16" alt="JavaScript" />
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1744844565/porfolio/javascript_cxa1hd.svg"
+              class="h-16 w-16"
+              alt="JavaScript"
+            />
             <p class="mt-3 text-sm md:text-base">JavaScript</p>
           </div>
           <div class="flex flex-col items-center">
-            <img src={node} class="h-16 w-16" alt="Node.js" />
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1744844549/porfolio/nodejs_pwvwid.svg"
+              class="h-16 w-16"
+              alt="Node.js"
+            />
             <p class="mt-3 text-sm md:text-base">Node.js</p>
           </div>
           <div class="flex flex-col items-center">
-            <img src={postgresql} class="h-16 w-16" alt="PostgreSQL" />
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1744844537/porfolio/postgresql_ybzlqh.svg"
+              class="h-16 w-16"
+              alt="PostgreSQL"
+            />
             <p class="mt-3 text-sm md:text-base">PostgreSQL</p>
           </div>
           <div class="flex flex-col items-center">
-            <img src={express} class="h-16 w-16" alt="Express.js" />
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1744844508/porfolio/express_mp0flx.svg"
+              class="h-16 w-16"
+              alt="Express.js"
+            />
             <p class="mt-3 text-sm md:text-base">Express.js</p>
           </div>
           <div class="flex flex-col items-center">
-            <img src={tailwindcss} class="h-16 w-16" alt="Tailwind CSS" />
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1744844589/porfolio/tailwindcss-mark.d52e9897_dbg6bu.svg"
+              class="h-16 w-16"
+              alt="Tailwind CSS"
+            />
             <p class="mt-3 text-sm md:text-base">Tailwind CSS</p>
           </div>
           <div class="flex flex-col items-center">
-            <img src={typescript} class="h-16 w-16" alt="Docker" />
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1744844469/porfolio/typescript_jaabhl.svg"
+              class="h-16 w-16"
+              alt="Docker"
+            />
             <p class="mt-3 text-sm md:text-base">TypeScript</p>
           </div>
           <div class="flex flex-col items-center">
-            <img src={git} class="h-16 w-16" alt="Git" />
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1744844578/porfolio/Git-Icon-1788C_raiuq1.svg"
+              class="h-16 w-16"
+              alt="Git"
+            />
             <p class="mt-3 text-sm md:text-base">Git</p>
           </div>
         </div>

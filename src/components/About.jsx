@@ -1,5 +1,4 @@
 import React from "react";
-import PerfilLogo from "../assets/images/IMG_2751.jpg";
 
 const About = () => {
   return (
@@ -31,7 +30,7 @@ const About = () => {
           <picture className="order-1 flex w-full items-center justify-center rounded-xl md:order-2 lg:mb-0">
             <img
               className="max-h-[250px] max-w-[250px] rounded-xl object-cover"
-              src={PerfilLogo}
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1744844774/porfolio/IMG_2751_nttih5.jpg"
               alt="Optional"
             />
           </picture>

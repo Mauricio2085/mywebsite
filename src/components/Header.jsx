@@ -13,7 +13,11 @@ const Header = () => {
             id="resume"
             className="hover:text-shadow ml-11 rounded-md font-semibold italic shadow-lg hover:text-cyan-300"
           >
-            <a href="./CV.pdf" target="_blank" rel="noopener noreferrer">
+            <a
+              href="./CV-Jose Mauricio Ocampo Marulanda - Frontend developer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Resume
             </a>
           </li>
