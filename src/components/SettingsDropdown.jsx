@@ -1,11 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
+import { useDarkMode } from "../hooks/useDarkMode";
 
 const SettingsDropdown = ({ type }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const buttonRef = useRef(null);
 
-  // const typeMenu = type === "mobile" ? "md:hidden" : "hidden md:inline-block";
+  const [IsDarkMode, setDarkMode] = useDarkMode();
+
   const typeMobile = {
     visibility: "md:hidden",
     position: "left",
@@ -44,7 +46,7 @@ const SettingsDropdown = ({ type }) => {
             }
           }, 100);
         }}
-        className="hover:text-shadow flex items-center justify-end font-semibold italic shadow-lg hover:text-cyan-300 focus:text-cyan-300 focus:outline-none"
+        className="hover:text-shadow-light dark:hover:text-shadow flex items-center justify-end font-semibold italic hover:text-cyan-500 focus:text-cyan-300 focus:outline-none dark:hover:text-cyan-300"
       >
         Settings
       </button>
@@ -64,6 +66,7 @@ const SettingsDropdown = ({ type }) => {
                 onClick={() => {
                   // Lógica para cambiar el idioma
                   console.log("Cambiar idioma");
+                  setIsOpen(false);
                 }}
               >
                 Translate
@@ -78,7 +81,8 @@ const SettingsDropdown = ({ type }) => {
               <button
                 onClick={() => {
                   // Lógica para cambiar el tema
-                  console.log("Cambiar tema");
+                  setDarkMode(false);
+                  setIsOpen(false);
                 }}
               >
                 Light mode
@@ -93,7 +97,8 @@ const SettingsDropdown = ({ type }) => {
               <button
                 onClick={() => {
                   // Lógica para cambiar el tema
-                  console.log("Cambiar tema");
+                  setDarkMode(true);
+                  setIsOpen(false);
                 }}
               >
                 Dark mode

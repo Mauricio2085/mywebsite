@@ -5,7 +5,7 @@ import { MdWhatsapp } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="mx-auto flex w-full flex-col items-center justify-center px-5 pb-20 pt-20 text-sm text-slate-200 md:flex md:max-w-2xl md:flex-row md:items-center md:px-0 md:text-base xl:max-w-4xl">
+    <footer className="mx-auto flex w-full flex-col items-center justify-center px-5 pb-20 pt-20 text-sm text-slate-800 dark:text-gray-300 md:flex md:max-w-2xl md:flex-row md:items-center md:px-0 md:text-base xl:max-w-4xl">
       <div className="flex w-full flex-col items-center justify-center md:items-start">
         <a className="text-md mt-1">Cel: +57 310 678 9371</a>
         <p className="mt-1">Pereira - Risaralda - Colombia</p>

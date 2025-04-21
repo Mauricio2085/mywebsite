@@ -8,6 +8,9 @@
   .text-shadow {
     text-shadow: rgb(213, 214, 241) 0px 0px 40px;
   }
+  .text-shadow-light {
+    text-shadow: rgb(80, 80, 88) 0px 0px 20px;
+  }
 }
 
 body {
