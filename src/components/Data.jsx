@@ -51,7 +51,7 @@ const Data = () => {
           name: "Express",
           icon: (
             <img
-              src="https://res.cloudinary.com/smartpocket/image/upload/v1744844508/porfolio/express_mp0flx.svg"
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1744938591/porfolio/express-dark_qdvkff.svg"
               className="w-[24px]"
               alt="Express.js logo"
             />
