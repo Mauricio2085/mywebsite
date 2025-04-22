@@ -1,0 +1,52 @@
+{
+  "header": {
+    "resume": "Descargar CV",
+    "portfolio": "Portafolio",
+    "about": "Sobre mí",
+    "stack": "Tecnologías",
+    "settings": "Ajustes"
+  },
+  "settings": {
+    "translate": "Traducir",
+    "light": "Modo claro",
+    "dark": "Modo oscuro"
+  },
+  "jumbo": {
+    "greeting": "¡Hola! Me llamo ",
+    "name": "Mauricio Ocampo",
+    "toBe": ". Soy ",
+    "engineering": "Ingeniero Electrónico",
+    "and": " y",
+    "developer": "Desarrollador Fullstack",
+    "complement": ". Trabajo con pasión, mucha actitud y siempre doy lo mejor de mí para ayudar a los demás."
+  },
+  "portfolio": {
+    "title": "Portafolio",
+    "description": "Explora mi portafolio y descubre lo que he creado. ¡Espero que te guste tanto como a mí me encantó crearlo!",
+    "projects": {
+      "title1": "Smart-Pocket - Venta de productos de garaje",
+      "skills": "Habilidades:",
+      "description1": "Aplicación para venta de productos de garaje, donde puedes comprar y vender productos de segunda mano. Puedes consultar productos al propietario vía Whatsapp. Creado con React y Tailwind CSS.",
+      "githubButton": "GitHub",
+      "previewButton": "Demo"
+    }
+  },
+  "about": {
+    "title": "Sobre mí",
+    "introduction": "Siempre me ha apasionado la tecnología y la resolución de problemas. Durante varios años trabajé en ",
+    "automation": " automatización industrial",
+    "fragment1": ", Donde desarrollé habilidades en control de procesos y optimización de sistemas. Sin embargo, mi curiosidad por el software y su impacto en la industria me llevó a explorar el desarrollo web, un campo donde encontré mi verdadera vocación. Me especializo en ",
+    "stack": "JavaScript, React, y Node.js",
+    "fragment2": ", construyendo aplicaciones full-stack con un enfoque en ",
+    "frontend": "desarrollo frontend",
+    "fragment3": ". Disfruto diseñando interfaces intuitivas y optimizando la experiencia del usuario mientras me aseguro de que mi código sea ",
+    "codeAtributte": "limpio, mantenible y escalable",
+    "fragment4": ". Además, me esfuerzo por seguir las mejores prácticas de desarrollo, incluidos los ",
+    "bestPractices": "patrones de diseño y pruebas automatizadas",
+    "fragment5": ". Actualmente, sigo mejorando mis habilidades y explorando tecnologías modernas para crear soluciones eficientes y de alto rendimiento. Busco oportunidades para aportar mis conocimientos y seguir creciendo como desarrollador."
+  },
+  "stack": {
+    "title": "Mi Stack de Desarrollo Web",
+    "description": "Frameworks y herramientas modernas con las que desarrollo mis aplicaciones web de forma eficiente y escalable."
+  }
+}

@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useDarkMode } from "../hooks/useDarkMode";
+import { useTranslation } from "react-i18next";
 
 const SettingsDropdown = ({ type }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const buttonRef = useRef(null);
-
   const [IsDarkMode, setDarkMode] = useDarkMode();
+  const { t, i18n } = useTranslation();
 
   const typeMobile = {
     visibility: "md:hidden",
@@ -48,7 +49,7 @@ const SettingsDropdown = ({ type }) => {
         }}
         className="hover:text-shadow-light dark:hover:text-shadow flex items-center justify-end font-semibold italic hover:text-cyan-500 focus:text-cyan-300 focus:outline-none dark:hover:text-cyan-300"
       >
-        Settings
+        {t("header.settings")}
       </button>
 
       {isOpen && (
@@ -65,11 +66,12 @@ const SettingsDropdown = ({ type }) => {
               <button
                 onClick={() => {
                   // Lógica para cambiar el idioma
-                  console.log("Cambiar idioma");
+                  const newLang = i18n.language === "en" ? "es" : "en";
+                  i18n.changeLanguage(newLang);
                   setIsOpen(false);
                 }}
               >
-                Translate
+                {t("settings.translate")}
               </button>
             </div>
             <div className="hover:text-shadow flex w-full items-center gap-4 border-b border-b-cyan-300 px-4 py-2 text-sm italic hover:text-cyan-300">
@@ -85,7 +87,7 @@ const SettingsDropdown = ({ type }) => {
                   setIsOpen(false);
                 }}
               >
-                Light mode
+                {t("settings.light")}
               </button>
             </div>
             <div className="hover:text-shadow flex w-full items-center gap-4 px-4 py-2 text-sm italic hover:text-cyan-300">
@@ -101,7 +103,7 @@ const SettingsDropdown = ({ type }) => {
                   setIsOpen(false);
                 }}
               >
-                Dark mode
+                {t("settings.dark")}
               </button>
             </div>
           </div>

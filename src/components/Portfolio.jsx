@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Data } from "./Data";
+import { useTranslation } from "react-i18next";
 
 const Portfolio = () => {
+  const { t } = useTranslation();
   return (
     <>
       <main id="portfolio" className="items-center px-5 md:px-0">
@@ -14,11 +16,10 @@ const Portfolio = () => {
         >
           <div className="mx-auto md:flex md:w-full md:max-w-2xl md:flex-col md:rounded-md xl:max-w-4xl">
             <h1 className="text-shadow-light dark:text-shadow mb-8 px-4 pt-4 text-center text-3xl font-semibold italic text-slate-800 dark:text-white md:text-left md:text-[40px]">
-              Porfolio
+              {t("portfolio.title")}
             </h1>
             <p className="mb-10 w-full px-4 text-sm font-normal text-slate-800 dark:text-gray-300 md:mb-20 md:text-xl">
-              Explore my portfolio and see what I’ve built. I hope you like it as much as I enjoyed
-              creating it!
+              {t("portfolio.description")}
             </p>
             <Data />
           </div>

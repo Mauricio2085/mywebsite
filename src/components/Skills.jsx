@@ -1,6 +1,8 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
+  const { t } = useTranslation();
   return (
     <section
       id="stack"
@@ -8,10 +10,10 @@ const Skills = () => {
     >
       <div className="flex w-full flex-1 flex-col text-center md:text-left">
         <h1 className="text-shadow-light dark:text-shadow mb-8 mt-4 text-3xl font-bold italic text-slate-800 dark:text-white md:text-[40px]">
-          My Web Development Stack
+          {t("stack.title")}
         </h1>
-        <p className="mb-20 text-sm font-normal text-slate-800 dark:text-gray-300 md:text-base">
-          Modern frameworks and tools with which I develop my web apps efficiently and scalebly.
+        <p className="mb-20 text-sm font-normal text-slate-800 dark:text-gray-300 md:text-xl">
+          {t("stack.description")}
         </p>
 
         <div className="text-shadow-light dark:text-shadow grid w-full flex-1 grid-cols-2 gap-8 text-slate-800 dark:text-gray-300 md:grid-cols-4">

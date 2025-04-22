@@ -1,0 +1,52 @@
+{
+  "header": {
+    "resume": "Download resume",
+    "portfolio": "Portfolio",
+    "about": "About me",
+    "stack": "Stack",
+    "settings": "Settings"
+  },
+  "settings": {
+    "translate": "Translate",
+    "light": "Light mode",
+    "dark": "Dark mode"
+  },
+  "jumbo": {
+    "greeting": "Hi! My name is ",
+    "name": "Mauricio Ocampo",
+    "toBe": ". I'm an ",
+    "engineering": "Electronic Engineer",
+    "and": " and ",
+    "developer": "Fullstack Developer",
+    "complement": ". I work with passion, a great attitude, and always give my best to help others."
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Explore my portfolio and see what I’ve built. I hope you like it as much as I enjoyed creating it!",
+    "projects": {
+      "title1": "Smart-Pocket - Garage Sale",
+      "skills": "Skills:",
+      "description1": "Garage sale app where you can buy and sell used goods. You can check with the owner about products via WhatsApp. Created with React and Tailwind CSS.",
+      "githubButton": "GitHub",
+      "previewButton": "Preview"
+    }
+  },
+  "about": {
+    "title": "About me",
+    "introduction": "I have always been passionate about technology and problem-solving. For several years, I worked in ",
+    "automation": " industrial automation",
+    "fragment1": ", where I developed skills in process control and system optimization. However, my curiosity about software and its impact on the industry led me to explore web development, a field where I found my true calling. I specialize in ",
+    "stack": "JavaScript, React, and Node.js",
+    "fragment2": ", building full-stack applications with a focus on ",
+    "frontend": "frontend development",
+    "fragment3": ". I enjoy designing intuitive interfaces and optimizing user experience while ensuring that my code is ",
+    "codeAtributte": "clean, maintainable, and scalable",
+    "fragment4": ". Additionally, I strive to follow best development practices, including ",
+    "bestPractices": "design patterns and automated testing",
+    "fragment5": ". Currently, I am continuously improving my skills and exploring modern technologies to create efficient and high-performance solutions. I am looking for opportunities to contribute my knowledge and continue growing as a developer."
+  },
+  "stack": {
+    "title": "My Web Development Stack",
+    "description": "Frameworks y herramientas modernas con las que desarrollo mis aplicaciones web de forma eficiente y escalable."
+  }
+}

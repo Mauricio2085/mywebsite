@@ -1,17 +1,16 @@
 import React from "react";
-import { FaCartShopping } from "react-icons/fa6";
 import { Project } from "./Project";
+import { useTranslation } from "react-i18next";
 
 const Data = () => {
+  const { t } = useTranslation();
   const dataProject = [
     {
       id: 1,
-      name: "Smart-Pocket - Venta de productos de garaje",
-      gitHubUrl: "jjgfjdtfhtyfdfh",
+      name: t("portfolio.projects.title1"),
       image:
         "https://res.cloudinary.com/smartpocket/image/upload/v1744847884/porfolio/Smart_porfolio_owfc4h.png",
-      description:
-        "Aplicación para venta de productos de garaje, donde puedes comprar y vender productos de segunda mano. Puedes consultar productos al propietario vía Whatsapp. Creado con React y Tailwind CSS.",
+      description: t("portfolio.projects.description1"),
       skills: [
         {
           id: 1,
@@ -73,7 +72,6 @@ const Data = () => {
     // {
     //   id: 2,
     //   name: "Maintenance App - Aplicación para gestión de Mantenimiento",
-    //   gitHubUrl: "jjgfjdtfhtyfdfh",
     //   image:
     //     "https://res.cloudinary.com/smartpocket/image/upload/v1744847884/porfolio/Smart_porfolio_owfc4h.png",
     //   description:
