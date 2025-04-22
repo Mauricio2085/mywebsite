@@ -1,9 +1,11 @@
 import React from "react";
 import { SettingsDropdown } from "./SettingsDropdown";
 import { MobileDropdown } from "./MobileDropdown";
+import { useDarkMode } from "../hooks/useDarkMode";
 import { useTranslation } from "react-i18next";
 
 const Header = () => {
+  const [isDarkMode, setIsDarkMode] = useDarkMode();
   const { t } = useTranslation();
   return (
     <header className="mx-auto block w-full px-5 pt-8 text-2xl text-slate-800 dark:text-gray-300 md:flex md:max-w-2xl md:flex-row-reverse md:items-center md:justify-between md:px-0 md:pb-20 md:pt-20 xl:max-w-4xl xl:pb-40">
@@ -34,7 +36,11 @@ const Header = () => {
             <a href="#stack">{t("header.stack")}</a>
           </li>
           <li className="ml-11 flex justify-end">
-            <SettingsDropdown type="desktop" />
+            <SettingsDropdown
+              setIsDarkMode={setIsDarkMode}
+              IsDarkMode={isDarkMode}
+              type="desktop"
+            />
           </li>
         </ul>
       </nav>

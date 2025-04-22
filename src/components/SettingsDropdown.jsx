@@ -1,12 +1,11 @@
 import React, { useState, useRef, useEffect } from "react";
-import { useDarkMode } from "../hooks/useDarkMode";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 
-const SettingsDropdown = ({ type }) => {
+const SettingsDropdown = ({ setIsDarkMode, isDarkMode, onClose, type }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const buttonRef = useRef(null);
-  const [IsDarkMode, setDarkMode] = useDarkMode();
   const { t, i18n } = useTranslation();
 
   const typeMobile = {
@@ -53,61 +52,73 @@ const SettingsDropdown = ({ type }) => {
       </button>
 
       {isOpen && (
-        <div
-          className={`absolute ${type === "mobile" ? typeMobile.position : typeDesktop.position}-0 z-10 mt-2 w-48 origin-top-${type === "mobile" ? typeMobile.position : typeDesktop.position} rounded-md bg-gradient-to-r from-[#1b2129] to-[#111213] shadow-lg ring-1 ring-black ring-opacity-5`}
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -10 }}
+          transition={{ duration: 0.2 }}
         >
-          <div className="px-[4px] py-1 text-white">
-            <div className="hover:text-shadow flex w-full items-center gap-4 border-b border-b-cyan-300 px-4 py-2 text-sm italic hover:text-cyan-300">
-              <img
-                className="w-4"
-                src="https://res.cloudinary.com/smartpocket/image/upload/v1744947836/porfolio/translate-dark_s5x05s.svg"
-                alt="Translate logo"
-              />
-              <button
-                onClick={() => {
-                  // Lógica para cambiar el idioma
-                  const newLang = i18n.language === "en" ? "es" : "en";
-                  i18n.changeLanguage(newLang);
-                  setIsOpen(false);
-                }}
-              >
-                {t("settings.translate")}
-              </button>
-            </div>
-            <div className="hover:text-shadow flex w-full items-center gap-4 border-b border-b-cyan-300 px-4 py-2 text-sm italic hover:text-cyan-300">
-              <img
-                className="w-4"
-                src="https://res.cloudinary.com/smartpocket/image/upload/v1744946076/porfolio/light-mode-dark_b2rojl.svg"
-                alt="Translate logo"
-              />
-              <button
-                onClick={() => {
-                  // Lógica para cambiar el tema
-                  setDarkMode(false);
-                  setIsOpen(false);
-                }}
-              >
-                {t("settings.light")}
-              </button>
-            </div>
-            <div className="hover:text-shadow flex w-full items-center gap-4 px-4 py-2 text-sm italic hover:text-cyan-300">
-              <img
-                className="w-4"
-                src="https://res.cloudinary.com/smartpocket/image/upload/v1744947729/porfolio/dark-mode-dark_nnbuzn.svg"
-                alt="Translate logo"
-              />
-              <button
-                onClick={() => {
-                  // Lógica para cambiar el tema
-                  setDarkMode(true);
-                  setIsOpen(false);
-                }}
-              >
-                {t("settings.dark")}
-              </button>
+          <div
+            className={`absolute ${type === "mobile" ? typeMobile.position : typeDesktop.position}-0 z-10 mt-2 w-48 origin-top-${type === "mobile" ? typeMobile.position : typeDesktop.position} rounded-md bg-gradient-to-r from-[#1b2129] to-[#111213] shadow-lg ring-1 ring-black ring-opacity-5`}
+          >
+            <div className="px-[4px] py-1 text-white">
+              <div className="hover:text-shadow flex w-full items-center gap-4 border-b border-b-cyan-300 px-4 py-2 text-sm italic hover:text-cyan-300">
+                <img
+                  className="w-4"
+                  src="https://res.cloudinary.com/smartpocket/image/upload/v1744947836/porfolio/translate-dark_s5x05s.svg"
+                  alt="Translate logo"
+                />
+                <button
+                  onClick={() => {
+                    // Lógica para cambiar el idioma
+                    const newLang = i18n.language === "en" ? "es" : "en";
+                    i18n.changeLanguage(newLang);
+                    setIsOpen(false);
+                    onClose?.();
+                  }}
+                >
+                  {t("settings.translate")}
+                </button>
+              </div>
+              <div className="hover:text-shadow flex w-full items-center gap-4 border-b border-b-cyan-300 px-4 py-2 text-sm italic hover:text-cyan-300">
+                <img
+                  className="w-4"
+                  src="https://res.cloudinary.com/smartpocket/image/upload/v1744946076/porfolio/light-mode-dark_b2rojl.svg"
+                  alt="Translate logo"
+                />
+                <button
+                  onClick={() => {
+                    // Lógica para cambiar el tema
+                    setIsDarkMode(false);
+                    console.log("light");
+                    setIsOpen(false);
+                    onClose?.();
+                  }}
+                >
+                  {t("settings.light")}
+                </button>
+              </div>
+              <div className="hover:text-shadow flex w-full items-center gap-4 px-4 py-2 text-sm italic hover:text-cyan-300">
+                <img
+                  className="w-4"
+                  src="https://res.cloudinary.com/smartpocket/image/upload/v1744947729/porfolio/dark-mode-dark_nnbuzn.svg"
+                  alt="Translate logo"
+                />
+                <button
+                  onClick={() => {
+                    // Lógica para cambiar el tema
+                    setIsDarkMode(true);
+                    console.log("dark");
+                    setIsOpen(false);
+                    onClose?.();
+                  }}
+                >
+                  {t("settings.dark")}
+                </button>
+              </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
     </div>
   );

@@ -15,9 +15,15 @@ const Portfolio = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <div className="mx-auto md:flex md:w-full md:max-w-2xl md:flex-col md:rounded-md xl:max-w-4xl">
-            <h1 className="text-shadow-light dark:text-shadow mb-8 px-4 pt-4 text-center text-3xl font-semibold italic text-slate-800 dark:text-white md:text-left md:text-[40px]">
-              {t("portfolio.title")}
-            </h1>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h1 className="text-shadow-light dark:text-shadow mb-8 px-4 pt-4 text-center text-3xl font-semibold italic text-slate-800 dark:text-white md:text-left md:text-[40px]">
+                {t("portfolio.title")}
+              </h1>
+            </motion.div>
             <p className="mb-10 w-full px-4 text-sm font-normal text-slate-800 dark:text-gray-300 md:mb-20 md:text-xl">
               {t("portfolio.description")}
             </p>

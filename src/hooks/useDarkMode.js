@@ -7,6 +7,7 @@ const useDarkMode = () => {
 
   useEffect(() => {
     const root = document.documentElement;
+    console.log("Dark mode actualizado:", isDarkMode);
     if (isDarkMode) {
       root.classList.add("dark");
       localStorage.setItem("theme", "dark");
