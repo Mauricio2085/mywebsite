@@ -5,11 +5,10 @@ import { useDarkMode } from "../hooks/useDarkMode";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
-const MobileDropdown = () => {
+const MobileDropdown = (setIsDarkMode, isDarkMode) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const buttonRef1 = useRef(null);
-  const [IsDarkMode, setIsDarkMode] = useDarkMode();
   const { t } = useTranslation();
 
   // Cierra el dropdown si se hace clic fuera de él
