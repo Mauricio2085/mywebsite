@@ -5,7 +5,7 @@ import { useDarkMode } from "../hooks/useDarkMode";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
-const MobileDropdown = (setIsDarkMode, isDarkMode) => {
+const MobileDropdown = ({ setIsDarkMode, isDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const buttonRef1 = useRef(null);
@@ -73,7 +73,7 @@ const MobileDropdown = (setIsDarkMode, isDarkMode) => {
                 <li className="hover:text-shadow flex w-full items-center gap-4 px-4 py-2 text-sm italic hover:text-cyan-300">
                   <SettingsDropdown
                     setIsDarkMode={setIsDarkMode}
-                    IsDarkMode={IsDarkMode}
+                    IsDarkMode={isDarkMode}
                     onClose={() => setIsOpen(false)}
                     type={"mobile"}
                   />
