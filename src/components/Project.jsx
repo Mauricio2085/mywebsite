@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-const Project = ({ projectName, image, description, skills }) => {
+const Project = ({ projectName, image, description, skills, demo, github }) => {
   const { t } = useTranslation();
   return (
     <div className="group mb-10 flex flex-col overflow-hidden md:flex-row">
@@ -39,10 +39,10 @@ const Project = ({ projectName, image, description, skills }) => {
         </p>
 
         {/* Footer */}
-        <div className="mt-auto flex items-center gap-4 px-4 py-4">
+        <div className="mt-auto flex items-center gap-4 px-4 py-2">
           <a
             className="flex h-10 w-[100px] items-center justify-between rounded-lg border border-cyan-500 bg-[#1b2129] px-2 py-2 text-sm font-semibold text-white transition-colors duration-500 hover:bg-cyan-500 hover:text-[#1b2129] dark:border-cyan-300 dark:hover:bg-cyan-300"
-            href="https://smart-pocket-v1.vercel.app"
+            href={demo}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -57,7 +57,7 @@ const Project = ({ projectName, image, description, skills }) => {
           </a>
           <a
             className="flex h-10 w-[100px] items-center justify-between rounded-lg border border-cyan-500 bg-[#1b2129] px-2 py-2 text-sm font-semibold text-white transition-colors duration-500 hover:bg-cyan-500 hover:text-[#1b2129] dark:border-cyan-300 dark:hover:bg-cyan-300 dark:hover:text-[#1b2129]"
-            href="https://github.com/Mauricio2085/smart-pocket-v1"
+            href={github}
             target="_blank"
             rel="noopener noreferrer"
           >

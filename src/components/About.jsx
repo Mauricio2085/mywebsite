@@ -29,32 +29,58 @@ const About = () => {
             <p className="order-2 text-sm text-slate-800 dark:text-gray-300 md:order-1 md:text-base">
               {t("about.introduction")}{" "}
               <strong className="font-semibold text-cyan-500 dark:text-cyan-300">
-                {t("about.automation")}
+                {t("about.electronicEngineer")}
               </strong>
               {t("about.fragment1")}{" "}
               <strong className="font-semibold text-cyan-500 dark:text-cyan-300">
-                {t("about.stack")}
+                {t("about.leadership")}
+              </strong>
+              {t("about.fragment1b")}{" "}
+              <strong className="font-semibold text-cyan-500 dark:text-cyan-300">
+                {t("about.criticalProblems")}
               </strong>
               {t("about.fragment2")}{" "}
               <strong className="font-semibold text-cyan-500 dark:text-cyan-300">
-                {t("about.frontend")}
+                {t("about.reliable")}
               </strong>
+              <br />
+              <br />
               {t("about.fragment3")}{" "}
               <strong className="font-semibold text-cyan-500 dark:text-cyan-300">
-                {t("about.codeAtributte")}
+                {t("about.webDevelopment")}
               </strong>
               {t("about.fragment4")}{" "}
               <strong className="font-semibold text-cyan-500 dark:text-cyan-300">
-                {t("about.bestPractices")}
+                {t("about.fullstackApps")}
               </strong>
-              {t("about.fragment5")}
+              {t("about.fragment5")}{" "}
+              <strong className="font-semibold text-cyan-500 dark:text-cyan-300">
+                {t("about.stack")}
+              </strong>
+              {t("about.fragment6")}
               <br />
+              <br />
+              {t("about.fragment7")}{" "}
+              <strong className="font-semibold text-cyan-500 dark:text-cyan-300">
+                {t("about.realClients")}
+              </strong>
+              {t("about.fragment8")}{" "}
+              <strong className="font-semibold text-cyan-500 dark:text-cyan-300">
+                {t("about.tangibleProblems")}
+              </strong>
+              <br />
+              <br />
+              {t("about.fragment9")}{" "}
+              <strong className="font-semibold text-cyan-500 dark:text-cyan-300">
+                {t("about.uniquePerspective")}
+              </strong>
+              {t("about.fragment10")}
             </p>
             <picture className="order-1 flex w-full items-center justify-center rounded-xl md:order-2 lg:mb-0">
               <img
                 className="max-h-[250px] max-w-[250px] rounded-xl border-4 border-cyan-500 object-cover"
                 src="https://res.cloudinary.com/smartpocket/image/upload/v1744844774/porfolio/IMG_2751_nttih5.jpg"
-                alt="Optional"
+                alt="Mauricio Ocampo - Electronics Engineer & Fullstack Developer"
               />
             </picture>
           </article>

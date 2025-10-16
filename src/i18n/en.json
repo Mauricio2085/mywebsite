@@ -28,22 +28,41 @@
       "skills": "Skills:",
       "description1": "Garage sale app where you can buy and sell used goods. You can check with the owner about products via WhatsApp. Created with React and Tailwind CSS.",
       "githubButton": "GitHub",
-      "previewButton": "Preview"
+      "previewButton": "Preview",
+      "smartPocketBackend": "Smart Pocket - Backend API",
+      "smartPocketBackendDescription": "REST API powering inventory and sales management for small businesses. Manages products, categories and user authentication. Currently in production with an active client.",
+
+      "smartPocketFrontend": "Smart Pocket - Frontend",
+      "smartPocketFrontendDescription": "Web interface for product visualization and management. Features admin panel with full CRUD, public catalog with search, filters and WhatsApp integration for customer inquiries.",
+
+      "permitManagement": "Permit Management Demo",
+      "permitManagementDescription": "Digital management system for work-at-heights permits in occupational safety. Creates permits, captures digital signatures, generates PDF documents and tracks status (pending/completed)."
     }
   },
   "about": {
     "title": "About me",
-    "introduction": "I have always been passionate about technology and problem-solving. For several years, I worked in ",
-    "automation": " industrial automation",
-    "fragment1": ", where I developed skills in process control and system optimization. However, my curiosity about software and its impact on the industry led me to explore web development, a field where I found my true calling. I specialize in ",
+    "introduction": "I'm an",
+    "electronicEngineer": "electronics engineer ",
+    "fragment1": "with experience in industrial automation and maintenance, where I",
+    "leadership": "led technical teams ",
+    "fragment1b": "and developed a key skill: solving",
+    "criticalProblems": "critical problems under pressure",
+    "fragment2": ". In that industry, a system failure stops production. I learned to analyze quickly, optimize processes, and ensure solutions work",
+    "reliable": "reliably.",
+    "fragment3": " The transition to ",
+    "webDevelopment": "web development ",
+    "fragment4": "was natural. The same automation principles —efficiency, scalability, and reliability— I now apply building",
+    "fullstackApps": "fullstack applications",
+    "fragment5": ". I specialize in",
     "stack": "JavaScript, React, and Node.js",
-    "fragment2": ", building full-stack applications with a focus on ",
-    "frontend": "frontend development",
-    "fragment3": ". I enjoy designing intuitive interfaces and optimizing user experience while ensuring that my code is ",
-    "codeAtributte": "clean, maintainable, and scalable",
-    "fragment4": ". Additionally, I strive to follow best development practices, including ",
-    "bestPractices": "design patterns and automated testing",
-    "fragment5": ". Currently, I am continuously improving my skills and exploring modern technologies to create efficient and high-performance solutions. I am looking for opportunities to contribute my knowledge and continue growing as a developer."
+    "fragment6": ", focusing on creating solutions that actually work in production.",
+    "fragment7": "Currently, I have projects deployed with",
+    "realClients": "real clients",
+    "fragment8": ", where I combine my technical expertise with the ability to understand business needs. I'm particularly interested in projects where technology solves",
+    "tangibleProblems": "tangible problems.",
+    "fragment9": "I'm looking for opportunities where I can bring my unique perspective:",
+    "uniquePerspective": "electronic engineer with an optimization mindset and modern fullstack skills",
+    "fragment10": "."
   },
   "stack": {
     "title": "My Web Development Stack",

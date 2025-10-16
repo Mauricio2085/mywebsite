@@ -28,22 +28,41 @@
       "skills": "Habilidades:",
       "description1": "Aplicación para venta de productos de garaje, donde puedes comprar y vender productos de segunda mano. Puedes consultar productos al propietario vía Whatsapp. Creado con React y Tailwind CSS.",
       "githubButton": "GitHub",
-      "previewButton": "Demo"
+      "previewButton": "Demo",
+      "smartPocketBackend": "Smart Pocket - Backend API",
+      "smartPocketBackendDescription": "API REST que impulsa la gestión de inventario y ventas para pequeños negocios. Permite administrar productos, categorías y autenticación de usuarios. Actualmente en producción con cliente real.",
+
+      "smartPocketFrontend": "Smart Pocket - Frontend",
+      "smartPocketFrontendDescription": "Interfaz web para visualización y gestión de productos. Incluye panel administrativo con CRUD completo, catálogo público con búsqueda, filtros e integración con WhatsApp para consultas de clientes.",
+
+      "permitManagement": "Permit Management Demo",
+      "permitManagementDescription": "Sistema de gestión digital de permisos de trabajo en alturas para seguridad ocupacional. Permite crear permisos, capturar firmas digitales, generar documentos PDF y rastrear estados (pendientes/completados)."
     }
   },
   "about": {
     "title": "Sobre mí",
-    "introduction": "Siempre me ha apasionado la tecnología y la resolución de problemas. Durante varios años trabajé en ",
-    "automation": " automatización industrial",
-    "fragment1": ", Donde desarrollé habilidades en control de procesos y optimización de sistemas. Sin embargo, mi curiosidad por el software y su impacto en la industria me llevó a explorar el desarrollo web, un campo donde encontré mi verdadera vocación. Me especializo en ",
-    "stack": "JavaScript, React, y Node.js",
-    "fragment2": ", construyendo aplicaciones full-stack con un enfoque en ",
-    "frontend": "desarrollo frontend",
-    "fragment3": ". Disfruto diseñando interfaces intuitivas y optimizando la experiencia del usuario mientras me aseguro de que mi código sea ",
-    "codeAtributte": "limpio, mantenible y escalable",
-    "fragment4": ". Además, me esfuerzo por seguir las mejores prácticas de desarrollo, incluidos los ",
-    "bestPractices": "patrones de diseño y pruebas automatizadas",
-    "fragment5": ". Actualmente, sigo mejorando mis habilidades y explorando tecnologías modernas para crear soluciones eficientes y de alto rendimiento. Busco oportunidades para aportar mis conocimientos y seguir creciendo como desarrollador."
+    "introduction": "Soy",
+    "electronicEngineer": "ingeniero electrónico ",
+    "fragment1": "con experiencia en automatización y mantenimiento industrial, donde",
+    "leadership": "lideré equipos técnicos ",
+    "fragment1b": "y desarrollé una habilidad clave: resolver",
+    "criticalProblems": "problemas críticos bajo presión",
+    "fragment2": ". En esa industria, un sistema que falla detiene la producción. Aprendí a analizar rápido, optimizar procesos y garantizar que las soluciones funcionen de forma",
+    "reliable": "confiable.",
+    "fragment3": " La transición al ",
+    "webDevelopment": "desarrollo web ",
+    "fragment4": "fue natural. Los mismos principios de automatización — eficiencia, escalabilidad y confiabilidad — los aplico ahora construyendo",
+    "fullstackApps": "aplicaciones fullstack",
+    "fragment5": ". Me especializo en",
+    "stack": "JavaScript, React y Node.js",
+    "fragment6": ", con enfoque en crear soluciones que realmente funcionen en producción.",
+    "fragment7": "Actualmente tengo proyectos desplegados con",
+    "realClients": "clientes reales",
+    "fragment8": ", donde combino mi experiencia técnica con la capacidad de entender necesidades de negocio. Me interesa especialmente trabajar en proyectos donde la tecnología resuelve",
+    "tangibleProblems": "problemas tangibles.",
+    "fragment9": "Busco oportunidades donde pueda aportar mi perspectiva única:",
+    "uniquePerspective": "ingeniero electrónico con mentalidad de optimización y habilidades fullstack modernas",
+    "fragment10": "."
   },
   "stack": {
     "title": "Mi Stack de Desarrollo Web",
