@@ -19,7 +19,7 @@ const Header = () => {
             className="hover:text-shadow-light dark:hover:text-shadow ml-11 flex justify-end font-semibold italic hover:text-cyan-500 dark:hover:text-cyan-300"
           >
             <a
-              href="./CV-Jose Mauricio Ocampo Marulanda - Frontend developer.pdf"
+              href="https://drive.google.com/file/d/1fj2d6UDWcFvXW36W7vBSjLvpzcqTvkrl/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
