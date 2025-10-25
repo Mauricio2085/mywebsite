@@ -54,7 +54,7 @@ const MobileDropdown = ({ setIsDarkMode, isDarkMode }) => {
               <div className="px-[4px] py-1 text-white">
                 <div className="hover:text-shadow flex w-full items-center gap-4 border-b border-b-cyan-300 px-4 py-2 text-sm font-semibold italic hover:text-cyan-300">
                   <a
-                    href="./CV-Jose Mauricio Ocampo Marulanda - Frontend developer.pdf"
+                    href="https://drive.google.com/file/d/1fj2d6UDWcFvXW36W7vBSjLvpzcqTvkrl/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
