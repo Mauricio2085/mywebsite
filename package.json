@@ -5,12 +5,10 @@
   "description": "Portafolio de desarrollador web con React y Tailwind CSS",
   "main": "index.js",
   "scripts": {
-    "test": "",
-    "build": "vite build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "dev": "vite",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "keywords": [
     "html",
@@ -23,6 +21,7 @@
   "dependencies": {
     "framer-motion": "^12.4.10",
     "i18next": "^25.0.1",
+    "next": "^16.0.10",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-i18next": "^15.4.1",

@@ -1,12 +1,15 @@
-import React, { useState, useRef, useEffect } from "react";
+"use client";
+
+import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import TranslationWrapper from "./TranslationWrapper";
 import { motion } from "framer-motion";
 
 const SettingsDropdown = ({ setIsDarkMode, isDarkMode, onClose, type }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const buttonRef = useRef(null);
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const typeMobile = {
     visibility: "md:hidden",
@@ -48,7 +51,7 @@ const SettingsDropdown = ({ setIsDarkMode, isDarkMode, onClose, type }) => {
         }}
         className="hover:text-shadow-light dark:hover:text-shadow flex items-center justify-end font-semibold italic hover:text-cyan-500 focus:text-cyan-300 focus:outline-none dark:hover:text-cyan-300"
       >
-        {t("header.settings")}
+        {<TranslationWrapper translationKey="header.settings" />}
       </button>
 
       {isOpen && (
@@ -77,7 +80,7 @@ const SettingsDropdown = ({ setIsDarkMode, isDarkMode, onClose, type }) => {
                     onClose?.();
                   }}
                 >
-                  {t("settings.translate")}
+                  {<TranslationWrapper translationKey="settings.translate" />}
                 </button>
               </div>
               <div className="hover:text-shadow flex w-full items-center gap-4 border-b border-b-cyan-300 px-4 py-2 text-sm italic hover:text-cyan-300">
@@ -95,7 +98,7 @@ const SettingsDropdown = ({ setIsDarkMode, isDarkMode, onClose, type }) => {
                     onClose?.();
                   }}
                 >
-                  {t("settings.light")}
+                  {<TranslationWrapper translationKey="settings.light" />}
                 </button>
               </div>
               <div className="hover:text-shadow flex w-full items-center gap-4 px-4 py-2 text-sm italic hover:text-cyan-300">
@@ -113,7 +116,7 @@ const SettingsDropdown = ({ setIsDarkMode, isDarkMode, onClose, type }) => {
                     onClose?.();
                   }}
                 >
-                  {t("settings.dark")}
+                  {<TranslationWrapper translationKey="settings.dark" />}
                 </button>
               </div>
             </div>
