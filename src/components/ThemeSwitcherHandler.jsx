@@ -8,7 +8,7 @@ const getSkillIcon = (skill, theme) => {
   if (skill === "Express" && theme === "dark") {
     return (
       <img
-        src="https://res.cloudinary.com/.../express-dark_qdvkff.svg"
+        src="https://res.cloudinary.com/smartpocket/image/upload/v1744938591/porfolio/express-dark_qdvkff.svg"
         className="w-[24px]"
         alt={`${skill} logo`}
       />
@@ -16,7 +16,7 @@ const getSkillIcon = (skill, theme) => {
   }
   return (
     <img
-      src={`https://res.cloudinary.com/.../${skill.toLowerCase()}_logo.svg`}
+      src={`https://res.cloudinary.com/smartpocket/image/upload/v1744844508/porfolio/express_mp0flx.svg`}
       className="w-[24px]"
       alt={`${skill} logo`}
     />
