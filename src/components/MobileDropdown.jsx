@@ -1,15 +1,15 @@
+"use client";
+
 import React, { useState, useRef, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { SettingsDropdown } from "./SettingsDropdown";
-import { useDarkMode } from "../hooks/useDarkMode";
-import { useTranslation } from "react-i18next";
+import TranslationWrapper from "./TranslationWrapper";
 import { motion } from "framer-motion";
 
 const MobileDropdown = ({ setIsDarkMode, isDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
   const buttonRef1 = useRef(null);
-  const { t } = useTranslation();
 
   // Cierra el dropdown si se hace clic fuera de él
   useEffect(() => {
@@ -58,17 +58,19 @@ const MobileDropdown = ({ setIsDarkMode, isDarkMode }) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    {t("header.resume")}
+                    {<TranslationWrapper translationKey="header.resume" />}
                   </a>
                 </div>
                 <div className="hover:text-shadow flex w-full items-center gap-4 border-b border-b-cyan-300 px-4 py-2 text-sm font-semibold italic hover:text-cyan-300">
-                  <a href="#portfolio">{t("header.portfolio")}</a>
+                  <a href="#portfolio">
+                    {<TranslationWrapper translationKey="header.portfolio" />}
+                  </a>
                 </div>
                 <div className="hover:text-shadow flex w-full items-center gap-4 border-b border-b-cyan-300 px-4 py-2 text-sm font-semibold italic hover:text-cyan-300">
-                  <a href="#about">{t("header.about")}</a>
+                  <a href="#about">{<TranslationWrapper translationKey="header.about" />}</a>
                 </div>
                 <div className="hover:text-shadow flex w-full items-center gap-4 border-b border-b-cyan-300 px-4 py-2 text-sm font-semibold italic hover:text-cyan-300">
-                  <a href="#stack">{t("header.stack")}</a>
+                  <a href="#stack">{<TranslationWrapper translationKey="header.stack" />}</a>
                 </div>
                 <li className="hover:text-shadow flex w-full items-center gap-4 px-4 py-2 text-sm italic hover:text-cyan-300">
                   <SettingsDropdown

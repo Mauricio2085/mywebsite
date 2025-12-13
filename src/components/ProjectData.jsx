@@ -1,30 +1,18 @@
-import React, { useEffect, useState } from "react";
 import { Project } from "./Project";
-import { useTranslation } from "react-i18next";
+import TranslationWrapper from "./TranslationWrapper";
+import ThemeSwitcherHandler from "./ThemeSwitcherHandler";
 
-const Data = () => {
-  const { t } = useTranslation();
-  const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
-
-  useEffect(() => {
-    const observer = new MutationObserver(() => {
-      const currentTheme = localStorage.getItem("theme") || "light";
-      setTheme(currentTheme);
-    });
-
-    observer.observe(document.documentElement, { attributes: true });
-
-    return () => observer.disconnect();
-  }, []);
-
+const ProjectData = () => {
   const dataProject = [
     // Smart Pocket Backend
     {
       id: 1,
-      name: t("portfolio.projects.smartPocketBackend"),
+      name: <TranslationWrapper translationKey="portfolio.projects.smartPocketBackend" />,
       image:
         "https://res.cloudinary.com/smartpocket/image/upload/v1760549626/porfolio/Login_k6q4q9.png",
-      description: t("portfolio.projects.smartPocketBackendDescription"),
+      description: (
+        <TranslationWrapper translationKey="portfolio.projects.smartPocketBackendDescription" />
+      ),
       demo: "https://smart-pocket-v1.vercel.app",
       github: "https://github.com/Mauricio2085/Smart_Pocket_Backend",
       skills: [
@@ -53,17 +41,7 @@ const Data = () => {
         {
           id: 3,
           name: "Express",
-          icon: (
-            <img
-              src={`${
-                theme === "dark"
-                  ? "https://res.cloudinary.com/smartpocket/image/upload/v1744938591/porfolio/express-dark_qdvkff.svg"
-                  : "https://res.cloudinary.com/smartpocket/image/upload/v1744844508/porfolio/express_mp0flx.svg"
-              }`}
-              className="w-[24px]"
-              alt="Express.js logo"
-            />
-          ),
+          icon: <ThemeSwitcherHandler skill="Express" />,
         },
         {
           id: 4,
@@ -104,10 +82,12 @@ const Data = () => {
     // Smart Pocket Frontend
     {
       id: 2,
-      name: t("portfolio.projects.smartPocketFrontend"),
+      name: <TranslationWrapper translationKey="portfolio.projects.smartPocketFrontend" />,
       image:
         "https://res.cloudinary.com/smartpocket/image/upload/v1744847884/porfolio/Smart_porfolio_owfc4h.png",
-      description: t("portfolio.projects.smartPocketFrontendDescription"),
+      description: (
+        <TranslationWrapper translationKey="portfolio.projects.smartPocketFrontendDescription" />
+      ),
       demo: "https://smart-pocket-v1.vercel.app",
       github: "https://github.com/Mauricio2085/smart-pocket-v1",
       skills: [
@@ -160,10 +140,12 @@ const Data = () => {
     // Permit Management Demo
     {
       id: 3,
-      name: t("portfolio.projects.permitManagement"),
+      name: <TranslationWrapper translationKey="portfolio.projects.permitManagement" />,
       image:
         "https://res.cloudinary.com/smartpocket/image/upload/v1760549040/porfolio/dashboard_tqfyoa.png",
-      description: t("portfolio.projects.permitManagementDescription"),
+      description: (
+        <TranslationWrapper translationKey="portfolio.projects.permitManagementDescription" />
+      ),
       demo: "https://permit-management-demo.vercel.app/",
       github: "https://github.com/Mauricio2085/permit-management-demo",
       skills: [
@@ -214,17 +196,7 @@ const Data = () => {
         {
           id: 5,
           name: "Express",
-          icon: (
-            <img
-              src={`${
-                theme === "dark"
-                  ? "https://res.cloudinary.com/smartpocket/image/upload/v1744938591/porfolio/express-dark_qdvkff.svg"
-                  : "https://res.cloudinary.com/smartpocket/image/upload/v1744844508/porfolio/express_mp0flx.svg"
-              }`}
-              className="w-[24px]"
-              alt="Express.js logo"
-            />
-          ),
+          icon: <ThemeSwitcherHandler skill="Express" />,
         },
         {
           id: 6,
@@ -281,4 +253,4 @@ const Data = () => {
   );
 };
 
-export { Data };
+export { ProjectData };

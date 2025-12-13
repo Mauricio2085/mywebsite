@@ -9,7 +9,7 @@ module.exports = {
         "second-dark": "#1b2129",
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
+        inter: ["var(--font-inter)", "sans-serif"],
       },
     },
   },

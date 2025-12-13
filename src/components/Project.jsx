@@ -1,7 +1,6 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
+import TranslationWrapper from "./TranslationWrapper";
 const Project = ({ projectName, image, description, skills, demo, github }) => {
-  const { t } = useTranslation();
   return (
     <div className="group mb-10 flex flex-col overflow-hidden md:flex-row">
       {/* Imagen del proyecto */}
@@ -24,7 +23,7 @@ const Project = ({ projectName, image, description, skills, demo, github }) => {
         {/* Skills */}
         <div className="flex flex-wrap items-center px-4 py-2">
           <h3 className="text-shadow-light dark:text-shadow mr-2 text-sm font-semibold text-cyan-500 dark:text-cyan-300">
-            {t("portfolio.projects.skills")}
+            {<TranslationWrapper translationKey="portfolio.projects.skills" />}
           </h3>
           {skills.map((skill) => (
             <div key={skill.id} className="mr-2 text-xl text-gray-600">
@@ -53,7 +52,7 @@ const Project = ({ projectName, image, description, skills, demo, github }) => {
                 alt="Logo Link"
               />
             </span>
-            <span>{t("portfolio.projects.previewButton")}</span>
+            <span>{<TranslationWrapper translationKey="portfolio.projects.previewButton" />}</span>
           </a>
           <a
             className="flex h-10 w-[100px] items-center justify-between rounded-lg border border-cyan-500 bg-[#1b2129] px-2 py-2 text-sm font-semibold text-white transition-colors duration-500 hover:bg-cyan-500 hover:text-[#1b2129] dark:border-cyan-300 dark:hover:bg-cyan-300 dark:hover:text-[#1b2129]"
@@ -68,7 +67,7 @@ const Project = ({ projectName, image, description, skills, demo, github }) => {
                 alt="Logo Github"
               />
             </span>
-            <span>{t("portfolio.projects.githubButton")}</span>
+            <span>{<TranslationWrapper translationKey="portfolio.projects.githubButton" />}</span>
           </a>
         </div>
       </div>
