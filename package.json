@@ -14,7 +14,8 @@
     "html",
     "css",
     "Javascript",
-    "React"
+    "React",
+    "Nextjs"
   ],
   "author": "Mauricio Ocampo <maoca2085@gmail.com>",
   "license": "MIT",
@@ -28,13 +29,11 @@
     "react-icons": "^4.12.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.4.0",
     "autoprefixer": "^10.4.20",
     "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "prettier": "^3.5.3",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "tailwindcss": "^3.3.2",
-    "vite": "^6.2.0"
+    "tailwindcss": "^3.3.2"
   }
 }
