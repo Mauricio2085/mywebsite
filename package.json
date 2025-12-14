@@ -1,7 +1,6 @@
 {
   "name": "mywebsite",
   "version": "1.0.0",
-  "homepage": "https://mauricio2085.github.io/mywebsite/",
   "description": "Portafolio de desarrollador web con React y Tailwind CSS",
   "main": "index.js",
   "scripts": {
@@ -20,6 +19,7 @@
   "author": "Mauricio Ocampo <maoca2085@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
     "framer-motion": "^12.4.10",
     "i18next": "^25.0.1",
     "next": "^16.0.10",

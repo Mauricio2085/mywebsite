@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import "../styles.css";
 import { Inter } from "next/font/google";
 import I18nClientProvider from "../components/I18nClientProvider";
@@ -19,7 +20,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.className} ${inter.variable}`}>
       <body className="flex-col items-center bg-white dark:bg-gradient-to-r dark:from-[#1b2129] dark:to-[#111213]">
-        <I18nClientProvider>{children}</I18nClientProvider>
+        <I18nClientProvider>
+          {children}
+          <Analytics />
+        </I18nClientProvider>
       </body>
     </html>
   );
