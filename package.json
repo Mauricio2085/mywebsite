@@ -1,7 +1,6 @@
 {
   "name": "mywebsite",
   "version": "1.0.0",
-  "homepage": "https://mauricio2085.github.io/mywebsite/",
   "description": "Portafolio de desarrollador web con React y Tailwind CSS",
   "main": "index.js",
   "scripts": {
