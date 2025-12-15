@@ -36,7 +36,9 @@
       "smartPocketFrontendDescription": "Web interface for product visualization and management. Features admin panel with full CRUD, public catalog with search, filters and WhatsApp integration for customer inquiries.",
 
       "permitManagement": "Permit Management Demo",
-      "permitManagementDescription": "Digital management system for work-at-heights permits in occupational safety. Creates permits, captures digital signatures, generates PDF documents and tracks status (pending/completed)."
+      "permitManagementDescription": "Digital management system for work-at-heights permits in occupational safety. Creates permits, captures digital signatures, generates PDF documents and tracks status (pending/completed).",
+      "zetinoxWebsite": "Zetinox S.A.S Website",
+      "zetinoxWebsiteDescription": "Implementation of a corporate WordPress website for Zetinox, highlighting product presentation, fully responsive design, and optimization for content self-management."
     }
   },
   "about": {

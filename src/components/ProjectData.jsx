@@ -233,6 +233,86 @@ const ProjectData = () => {
         },
       ],
     },
+    // Zetinox website
+    {
+      id: 4,
+      name: <TranslationWrapper translationKey="portfolio.projects.zetinoxWebsite" />,
+      image:
+        "https://res.cloudinary.com/smartpocket/image/upload/v1765764353/porfolio/Zetinox_project_nfeq4g.png",
+      description: (
+        <TranslationWrapper translationKey="portfolio.projects.zetinoxWebsiteDescription" />
+      ),
+      demo: "https://zetinox.com/",
+      github: "#",
+      skills: [
+        {
+          id: 1,
+          name: "Wordpress",
+          icon: (
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1765765849/porfolio/wordpress_zaq0bc.svg"
+              className="w-[24px]"
+              alt="React logo"
+            />
+          ),
+        },
+        {
+          id: 2,
+          name: "HTML5",
+          icon: (
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1765765722/porfolio/html-5_oawi6s.svg"
+              className="w-[24px]"
+              alt="HTML logo"
+            />
+          ),
+        },
+        {
+          id: 3,
+          name: "CSS3",
+          icon: (
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1765766076/porfolio/css_hctfit.svg"
+              className="w-[24px]"
+              alt="CSS logo"
+            />
+          ),
+        },
+        {
+          id: 4,
+          name: "JavaScript",
+          icon: (
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1744844565/porfolio/javascript_cxa1hd.svg"
+              className="w-[24px]"
+              alt="JavaScript logo"
+            />
+          ),
+        },
+        {
+          id: 5,
+          name: "MySQL",
+          icon: (
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1765765974/porfolio/mysql_rohwnl.svg"
+              className="w-[24px]"
+              alt="MySQL logo"
+            />
+          ),
+        },
+        {
+          id: 6,
+          name: "Elementor",
+          icon: (
+            <img
+              src="https://res.cloudinary.com/smartpocket/image/upload/v1765766205/porfolio/elementor_zhxtof.png"
+              className="w-[24px]"
+              alt="Elementor logo"
+            />
+          ),
+        },
+      ],
+    },
   ];
   return (
     <section className="mb-10 flex w-full flex-col items-center justify-center md:justify-center md:justify-items-center md:gap-4">
