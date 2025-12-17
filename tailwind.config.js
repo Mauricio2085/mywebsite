@@ -18,7 +18,7 @@ module.exports = {
         },
       },
       animation: {
-        "gradient-flow": "gradient-border 5s linear infinite",
+        "gradient-flow": "gradient-border 3s linear infinite",
       },
     },
   },
