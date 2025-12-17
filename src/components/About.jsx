@@ -67,11 +67,13 @@ const About = () => {
               {<TranslationWrapper translationKey="about.fragment10" />}
             </p>
             <picture className="order-1 flex w-full items-center justify-center rounded-xl md:order-2 lg:mb-0">
-              <img
-                className="max-h-[250px] max-w-[250px] rounded-xl border-4 border-cyan-500 object-cover"
-                src="https://res.cloudinary.com/smartpocket/image/upload/v1744844774/porfolio/IMG_2751_nttih5.jpg"
-                alt="Mauricio Ocampo - Electronics Engineer & Fullstack Developer"
-              />
+              <div className="animate-gradient-flow dark:animate-gradient-flow max-h-[250px] max-w-[250px] rounded-xl bg-gradient-to-r from-cyan-500 via-cyan-300 to-cyan-100 bg-[length:200%_200%] dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-300 dark:to-cyan-100 dark:bg-[length:200%_200%]">
+                <img
+                  className="max-h-[250px] max-w-[250px] rounded-xl object-cover p-1"
+                  src="https://res.cloudinary.com/smartpocket/image/upload/v1744844774/porfolio/IMG_2751_nttih5.jpg"
+                  alt="Mauricio Ocampo - Electronics Engineer & Fullstack Developer"
+                />
+              </div>
             </picture>
           </article>
         </section>
