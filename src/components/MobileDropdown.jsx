@@ -27,6 +27,7 @@ const MobileDropdown = ({ setIsDarkMode, isDarkMode }) => {
   return (
     <div className="relative md:inline-block" ref={dropdownRef}>
       <button
+        aria-label="menu button"
         ref={buttonRef1}
         onClick={() => {
           setIsOpen((prev) => !prev);
