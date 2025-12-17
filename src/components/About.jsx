@@ -67,7 +67,7 @@ const About = () => {
               {<TranslationWrapper translationKey="about.fragment10" />}
             </p>
             <picture className="order-1 flex w-full items-center justify-center rounded-xl md:order-2 lg:mb-0">
-              <div className="animate-gradient-flow dark:animate-gradient-flow max-h-[250px] max-w-[250px] rounded-xl bg-gradient-to-r from-cyan-500 via-cyan-300 to-cyan-100 bg-[length:200%_200%] dark:bg-gradient-to-r dark:from-cyan-500 dark:via-cyan-300 dark:to-cyan-100 dark:bg-[length:200%_200%]">
+              <div className="max-h-72 max-w-xs animate-gradient-flow rounded-xl bg-gradient-to-tr from-cyan-500 via-white to-cyan-400 bg-[length:200%_200%] p-1 shadow-lg shadow-cyan-500/20">
                 <img
                   className="max-h-[250px] max-w-[250px] rounded-xl object-cover p-1"
                   src="https://res.cloudinary.com/smartpocket/image/upload/v1744844774/porfolio/IMG_2751_nttih5.jpg"
