@@ -243,7 +243,7 @@ const ProjectData = () => {
         <TranslationWrapper translationKey="portfolio.projects.zetinoxWebsiteDescription" />
       ),
       demo: "https://zetinox.com/",
-      github: "#",
+      github: "https://github.com/Mauricio2085/zetinox-website",
       skills: [
         {
           id: 1,
