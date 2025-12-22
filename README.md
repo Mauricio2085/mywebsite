@@ -111,7 +111,7 @@ Sistema full stack para gestión digital de permisos de trabajo en alturas enfoc
 - Captura de firmas digitales con canvas HTML5
 - Generación automática de documentos PDF
 - Formularios complejos con validaciones en tiempo real
-- Validación de datos con Joi/Hapi
+- Validación de datos con yup
 - Arquitectura backend modular con TypeScript
 - Base de datos relacional normalizada con foreign keys
 - Sistema de estados y tracking de permisos
@@ -152,13 +152,15 @@ Sitio web corporativo desarrollado para empresa del sector industrial especializ
 
 En mis proyectos priorizo:
 
-- Uso de TypeScript cuando el alcance y la complejidad lo justifican
-- Código legible y mantenible
-- Separación de responsabilidades
-- Uso correcto de middlewares
-- Manejo centralizado de errores
-- Validaciones
-- Buen diseño de base de datos
+**Implementación de TypeScript** para garantizar la integridad de los datos y minimizar errores en tiempo de ejecución mediante un tipado fuerte.
+
+**Arquitectura limpia y modular** para asegurar un código legible, escalable y fácil de mantener.
+
+**Separación de responsabilidades** y aplicación de patrones de diseño (como MVC).
+
+**Seguridad y robustez:** Uso correcto de middlewares, validaciones de esquemas y manejo centralizado de excepciones.
+
+**Diseño de bases de datos eficiente:** Modelado relacional normalizado para asegurar la consistencia de la información.
 
 ---
 
